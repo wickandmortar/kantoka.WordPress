@@ -1,0 +1,124 @@
+.slider{
+    .carousel-indicators{
+        width: 1115px;
+        margin: 0 auto;
+        justify-content: flex-start;
+        bottom: 75px;
+        z-index: 4;
+        @include respond-to(lg){
+            width: 768px;
+            margin-left: 30px;
+        }
+        @include respond-to(md){
+            width: 575px;
+            margin-left: 30px;
+        }
+        li{
+            text-indent: 0;
+            font-weight: 700;
+            font-size: 20px;
+            position: relative;
+            background-color: transparent;
+            padding-right: 35px;
+
+            box-sizing: content-box;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            width: 30px;
+            height: auto;
+            background-clip: none;
+            border-top: 0px solid transparent;
+            border-bottom: 0px solid transparent;
+            opacity: 1;
+            @include transition(all 0.3s ease-in-out);
+            &.active{
+                @include transition(all 0.3s ease-in-out);
+                padding-right: 140px;
+                &:before{
+                    position: absolute;
+                    content: '';
+                    background-color: $pink;
+                    width: 120px;
+                    height: 2px;
+                    top: 50%;
+                    left: 35px;
+                    transform: translateY(-50%);
+                    opacity: 1;
+                } 
+            }
+            
+        }
+    }
+    .carousel-item {
+        height: 745px;
+        background-color: $white;
+        .slider-item{
+            height: 745px;
+            padding: 80px 0 0;
+            background-repeat: no-repeat;
+            background-size: 63% 65%;
+            background-position: top right;
+            position: relative;
+            @include respond-to(md){
+                padding: 30px 0 0;
+            }
+            @include respond-to(sm){
+                background-image: none !important;
+            }
+            
+            .container{
+                height: 745px;
+            }
+            h1{
+                font-size: 100px;
+                line-height: 95%;
+                @include respond-to(lg){
+                    font-size: 70px;
+                }
+                
+            }
+            h4{
+                font-family: $font_3;
+                font-size: 50px;
+                font-weight: 400;
+                text-transform: none;
+                padding: 25px 0;
+            }
+            .slider-img{
+                position: absolute;
+                right: 140px;
+                bottom: 0;
+                max-width: 475px;
+                @include respond-to(md){
+                    max-width: 350px;
+                    right: 30px;
+                }
+                
+                &:before{
+                    content: '';
+                    position: absolute;
+                    background-color: $pink;
+                    top: -25px;
+                    width: calc(100% - 25px);
+                    height: 25px;
+                    left: 25px;
+                }
+                img{
+                    width: 100%;
+                    border-right: 25px solid $pink;
+                }
+            }
+        }
+    }
+    .down-arrow{
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        z-index: 6;
+        transform: translateX(-50%);
+        max-width: 70px;
+        img{
+            width: 100%;
+        }
+    }
+}

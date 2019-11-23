@@ -1,0 +1,54 @@
+// Colors
+$black: #000000;
+$white: #FFFFFF;
+$pink: #E0C8C8;
+$gray: #7b7b7b;
+$lightgray: #EBEBEB;
+
+// Fonts
+$font_1: DinPro;
+$font_2: DinPro-condensed;
+$font_3: Juliane;
+
+
+
+// Mixins
+@mixin transition($transition){
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+
+// Breakpoint Mixin
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media (max-width: 575px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == "sm" {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "md" {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "lg" {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xl" {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}

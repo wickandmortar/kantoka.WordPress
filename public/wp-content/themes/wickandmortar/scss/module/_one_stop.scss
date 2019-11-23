@@ -1,0 +1,29 @@
+.one-stop-shop{
+    padding: 100px 0;
+    background-color: $lightgray;
+    div.col-md-5{
+        &:first-child{
+            padding-right: 90px;
+        }
+        &:last-child{
+            padding-left: 90px;
+        }
+        @include respond-to(md){
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            margin-bottom: 30px;
+        }
+        
+        .form{
+            margin: 45px 0 0 !important;
+            .form-control{
+                height: 55px;
+                font-size: 18px;
+                background-color: $white;
+            }
+            .btn{
+                margin-top: 45px;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.cat-product-list{
+    padding: 25px 0;
+    .product-item{
+        padding: 30px;
+        .product-img-container{
+            margin-bottom: 30px;
+            img{
+                max-width: 100%;
+                max-height: 300px;
+            }
+        }
+        .product-item-content{
+            h5{
+                font-weight: 500;
+            }
+        }
+    }
+}

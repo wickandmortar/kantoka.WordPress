@@ -1,0 +1,51 @@
+.btn.focus, .btn:focus {
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
+}
+.container{
+    padding-right: 0px;
+    padding-left: 0px;
+    position: relative;
+    @include respond-to(xl){
+        max-width: 1200px;
+    }
+    @include respond-to(sm){
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+.breadcrumb{
+    margin: 40px 0;
+    background-color: transparent;
+    padding-left: 0;
+    .breadcrumb-item{
+        font-size: 23px;
+        font-family: $font_2;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba($gray, .7);
+        a{
+            font-size: 23px;
+            font-family: $font_2;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba($gray, .7);
+        }
+        &:first-child{
+            &::before {
+                content: "";
+            }
+        }
+        &::before {
+            content: ">";
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.home-brands{
+    padding: 120px 0;
+    background-color: $white;
+    .row{
+        .col-md-4{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .btn{
+            margin-top: 25px;
+        }
+    }
+    .brands-item{
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 60px;
+        @include respond-to(sm){
+            max-width: 450px;
+            margin: 0 auto 60px;
+        }
+        
+        .brands-item-content{
+            position: relative;
+            padding-bottom: 100%;
+            h4{
+                position: absolute;
+                background-color: $white;
+                left: 0px;
+                bottom: 0px;
+                margin: 0;
+                padding-top: 8px;
+                width: 75%;
+                height: 40px;
+                overflow: hidden;
+            }
+        }
+    }
+}

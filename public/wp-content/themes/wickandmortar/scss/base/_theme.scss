@@ -1,0 +1,174 @@
+// Type
+
+html,body{
+    overflow-x: hidden;
+}
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    &::-webkit-scrollbar{
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: $white;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $gray;
+    }
+}
+*{
+    font-family: $font_1;
+}
+h1,h2,h3,h4,h5,h6{
+    color: $black;
+    font-family: $font_2;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    &.gray{
+        color: rgba($gray, .7);
+        a{
+            color: rgba($gray, .7);
+        }
+    }
+    &.cap{
+        text-transform: capitalize;
+    }
+    &.bb{
+        /* Bottom Border */
+        margin-bottom: 70px;
+        &:before{
+            position: absolute;
+            content: '';
+            bottom: -40px;
+            left: 0;
+            width: 115px;
+            height: 8px;
+            background-color: $white;
+        }
+        &.pink{
+            &:before{
+                background-color: $pink;
+            }
+        }
+        &.black{
+            &:before{
+                background-color: $black;
+            }
+        }
+        &.bblg{
+            /* More space bettwen bar and heading */
+            margin-bottom: 100px;
+            &:before{
+                width: 220px;
+                bottom: -55px;
+            }
+        }
+        &.bbsm{
+            /* More space bettwen bar and heading */
+            margin-bottom: 70px;
+            &:before{
+                width: 150px;
+                bottom: -35px;
+            }
+        }
+        &.text-center{
+            &:before{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    a{
+        color: $black;
+        &:hover{
+            color: $black;
+            opacity: .9;
+        }
+    }
+}
+h1{
+    font-size: 55px;
+}
+h2{
+    font-size: 45px;
+    letter-spacing: 4px;
+    @include respond-to(md){
+        font-size: 40px;
+        letter-spacing: 3.5px;
+    }
+    
+}
+h3{
+    font-size: 42px;
+    letter-spacing: 4px;
+    &.lslg{
+        letter-spacing: 8px;
+    }
+    @include respond-to(md){
+        font-size: 38px;
+        letter-spacing: 3.5px;
+    }
+}
+h4{
+    font-size: 27px;
+}
+h5{
+    font-size: 25px;
+}
+p{
+    font-size: 19px;
+    margin-bottom: 27px;
+    span{
+        font-weight: 700;
+    }
+}
+a{
+    &:hover{
+        text-decoration: none;
+        opacity: .9;
+        @include transition(all 0.3s ease-in-out);
+    }
+    .iconify{
+        font-size: 40px;
+        color: $white;    
+    }
+}
+
+.btn{
+    font-family: $font_2;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding: 15px 45px;
+    background-color: $pink;
+    border-radius: 0px;
+    &.btn-sm{
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        padding: 12px 25px;
+    }
+    &.light{
+        background-color: $white;
+        color: $black;
+    }
+    @include respond-to(md){
+        font-size: 22px;
+        line-height: 35px;
+        letter-spacing: 2px;
+    }
+    &:hover{
+        opacity: .9;
+    }
+    
+}
+hr{
+    height: 8px;
+    background-color: $black;
+    border: none !important;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}

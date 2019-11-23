@@ -1,0 +1,77 @@
+.feature-table{
+    padding: 0;
+    margin: 0;
+    .feature-table-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include respond-to(sm){
+            grid-template-columns: 1fr;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .feature-table-item{
+            height: 750px;
+            position: relative;
+            background-size: cover;
+            cursor: pointer;
+            @include transition(all 0.3s ease-in-out);
+            @include respond-to(lg){
+                height: 700px;
+            }
+            @include respond-to(md){
+                height: 640px;
+            }
+            @include respond-to(sm){
+                height: 700px;
+            }
+            
+            .feature-table-content{
+                position: absolute;
+                width: 100%;
+                padding-left: 85px;
+                padding-right: 85px;
+                top: 50%;
+                transform: translateY(-50%);
+                @include transition(all 0.3s ease-in-out);
+                @include respond-to(lg){
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                img{
+                    width: 110px;
+                    margin-bottom: 30px;
+                    @include respond-to(lg){
+                        width: 80px;
+                    }
+                }
+                p{
+                    visibility: hidden;
+                    opacity: 0;
+                    max-height: 0;
+                    margin: 0;
+                    @include transition(all 0.3s ease-in-out);
+                }
+            }
+            &:hover{
+                background-image: none !important;
+                background-color: $pink;
+                @include transition(all 0.3s ease-in-out);
+                .feature-table-content{
+                    @include transition(all 0.3s ease-in-out);
+                    p{
+                        visibility: visible;
+                        opacity: 1;
+                        max-height: 190px;
+                        @include transition(all 0.3s ease-in-out);
+                    }
+                    h2{
+                        &:before{
+                            @include transition(all 0.3s ease-in-out);
+                            background-color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

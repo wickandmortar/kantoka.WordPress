@@ -1,0 +1,25 @@
+.join-circle{
+    padding: 100px 80px;
+    background-size: auto;
+    background-repeat: repeat;
+    .join-circle-container{
+        padding: 40px 0;
+        background-color: $white;
+        h1.join-circle-title{
+            font-size: 155px;
+            line-height: 90%;
+            letter-spacing: 20px;
+            @include respond-to(sm){
+                margin-top: 30px;
+                font-size: 80px;
+                letter-spacing: 10px;
+            }
+            
+        }
+        .join-circle-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.cann-meet{
+    .cann-meet-header-container{
+        background-size: auto;
+        background-repeat: repeat;
+        padding: 100px 80px;
+        .cann-meet-header{
+            padding: 75px 0;
+            background-color: $white;
+            h3{
+                margin: 0;
+            }
+        }
+    }
+    .kantoka-mission{
+        padding-bottom: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include respond-to(md){
+            background-size: 165%;
+            background-position: 54%;
+        }
+        @include respond-to(sm){
+            padding-bottom: 0px;
+            background-image: none;
+        }
+        .kantoka-mission-content{
+            padding: 80px 100px;
+            background-color: $pink;
+            width: 45%;
+            @include respond-to(lg){
+                width: 65%;
+            }
+            @include respond-to(md){
+                width: 75%;
+                padding: 90px 100px;
+            }
+            @include respond-to(sm){
+                width: 100%;
+                padding: 70px;
+            }
+            p{
+                line-height: 34px;
+            }
+        }
+    }
+}
