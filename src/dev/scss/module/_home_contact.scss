@@ -41,8 +41,21 @@
 
 	input[type="submit"]{
 		max-width: 177px;
+		padding-left: 35px !important;
 	}
+
+	
 	.ginput_container .form-control{
 		padding-left: 20px !important;
+	}
+}
+
+
+.cta_form_wrapper{
+	@media only screen and(max-width: 450px){
+		input[type="submit"]{
+			padding-left: 15px !important;
+			font-size: 13px !important;
+		}
 	}
 }

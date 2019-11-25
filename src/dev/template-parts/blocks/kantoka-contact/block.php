@@ -21,7 +21,10 @@
 
                 <div class="contact-form">
                 	<div class="row">
-                		<?php echo do_shortcode('[gravityform id='.$form_ID.' title=false description=false ajax=true tabindex=49]'); 	?>
+                        <div class="col-12">
+                            <?php echo do_shortcode('[gravityform id='.$form_ID.' title=false description=false ajax=true tabindex=49]');   ?>
+                        </div>
+                		
                 	</div>
                 </div>
 
