@@ -1,0 +1,19 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-sbgd-wrapper-block {
+  //background: #ececec;
+  border: 1px dotted #c5c5c5;
+  color: $black;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: rgba(black,.04);
+
+  .editor-inner-blocks {
+	  margin-top: -1rem;
+  }
+}

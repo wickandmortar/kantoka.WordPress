@@ -93,7 +93,7 @@ gulp.task('watch', function () {
     ],gulp.series(['dist']));
 
     gulp.watch([
-        'dev/js/modules/*.js',
+        'dev/assets/js/modules/*.js','dev/assets/js/*.js'
     ],gulp.series(['scriptsRefresh', 'dist']));
 });
 

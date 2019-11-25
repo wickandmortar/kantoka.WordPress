@@ -6,3 +6,43 @@
         margin: 0 auto;
     }
 }
+
+@media only screen and(min-width: 576px){
+
+	.home_contact_form{
+		.offset-sm-3{
+			margin-left: 25% !important;
+		}
+
+		.gfield{
+			float: left;
+			clear: none !important;
+			display: inline;
+		}
+
+		select, input{
+			margin-bottom: 0 !important;
+		}
+
+		
+	}
+
+}
+
+.home_contact_form_wrapper{
+	top: -25px !important;
+	position: relative;
+	display: block !important;
+	margin:0 auto !important;
+
+	input{
+		padding-left: 20px;
+	}
+
+	input[type="submit"]{
+		max-width: 177px;
+	}
+	.ginput_container .form-control{
+		padding-left: 20px !important;
+	}
+}

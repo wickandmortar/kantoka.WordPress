@@ -57,6 +57,13 @@
     .copy_right{
         margin-top: 80px;
     }
+
+
+	#gallery-1 img{
+		border:0px solid;
+	}
+
+
 }
 .social-icon{
     @include respond-to(md){

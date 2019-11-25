@@ -22,6 +22,10 @@
     font-size: 18px;
     height: 55px;
 }
+
+.ginput_container .form-control{
+	padding:.375rem .75rem !important;
+}
 .contact-form{
     .form-control{
         background-color: $white;

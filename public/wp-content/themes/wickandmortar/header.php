@@ -15,8 +15,9 @@
 
     <?php wp_head(); ?>
 
+
 </head>
-<body <?php body_class( $class ); ?>> 
+<body <?php body_class(); ?>> 
 
 <!-- Top Bar -->
 <div class="top-bar">
@@ -67,38 +68,103 @@
                     </div>
                     <div class="nav-megamenu" id="nav-megamenu">
                         <div class="row">
+
                             <div class="col-md-8">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="menu-featured-item lg" style="background-image: url('https://dopemagazine.com/wp-content/uploads/2019/10/democratic-primary-debate.jpg')">
-                                            <div class="menu-featured-item-content">
-                                                <h4>Democratic Debates Gone Wild</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 menu-featured-item-sm-container">
-                                        <div class="menu-featured-item sm" style="background-image: url('https://dopemagazine.com/wp-content/uploads/2019/10/Texas-Veterans-for-Medical-Marijuana-TXVMMJhero.jpg')">
-                                            <div class="menu-featured-item-content">
-                                                <h4>Texas Veterans for Medical Marijuana (TXVMMJ)</h4>
-                                            </div>
-                                        </div>
-                                        <div class="menu-featured-item sm" style="background-image: url('https://dopemagazine.com/wp-content/uploads/2019/10/more-than-consumers.jpg')">
-                                            <div class="menu-featured-item-content">
-                                                <h4>More Than Consumers</h4>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                                    <?php
+                                        global $post;
+                                        $args = array(
+                                            'post_type' => 'post',
+                                            'posts_per_page' => '3',
+                                            'category_name' => 'top-3'
+
+                                        );
+                                        $i = 1;
+
+                                        $head_query  = new WP_Query($args);
+                                        
+                                        if($head_query -> have_posts()): while($head_query -> have_posts()): $head_query ->the_post();
+
+
+                                                
+
+                                            if($i == 1){ ?>
+
+                                                <?php
+
+                                                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');
+                                                    $image = $image[0];
+
+                                                ?>
+
+                                                <div class="col-md-6">
+                                                    <div class="menu-featured-item lg" style="background-image: url('<?php echo $image; ?>')">
+                                                        <div class="menu-featured-item-content">
+                                                            <h4><?php the_title(); ?></h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            <?php  }else if($i == 2){ ?>
+                                            
+                                                <?php
+                                                
+                                                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_large');
+                                                    $image = $image[0];
+
+                                                ?>
+
+                                                    <div class="col-md-6 menu-featured-item-sm-container">
+                                                        <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
+                                                            <div class="menu-featured-item-content">
+                                                                <h4><?php the_title(); ?></h4>
+                                                            </div>
+                                                        </div>
+
+
+                                                <?php  } else{ ?>
+
+                                                <?php
+                                                
+                                                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_large');
+                                                    $image = $image[0];
+
+                                                ?>
+                                                        <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
+                                                            <div class="menu-featured-item-content">
+                                                                <h4><?php the_title(); ?></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                <?php }
+
+                                            $i++;
+                                        ?>
+                                     
+                                        
+
+                                        <br />
+
+                                    <?php
+                                        endwhile; endif; wp_reset_postdata();
+                                    ?>
+
+
                                 </div>
                             </div>
+
+
                             <div class="col-md-4 main-menu-container">
-                                <ul class="main-menu">
-                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
-                                    <li class=""><a href="about.html">About</a></li>
-                                    <li class=""><a href="category.html">Brands</a></li>
-                                    <li class=""><a href="category.html">The Circle</a></li>
-                                    <li class=""><a href="blog.html">Blog</a></li>
-                                    <li><a href="index.html#contact">Contact</a></li>
-                                </ul>
+                                <?php
+                                    if (function_exists('wp_nav_menu')) {
+                                        wp_nav_menu(array('theme_location' => 'wpj-main-menu','container' => false, 'menu_class' => 'main-menu', 'fallback_cb' => 'wpj_default_menu'));
+                                    }
+                                    else {
+                                        wpj_default_menu();
+                                    }
+                                ?>
                             </div>
                         </div>
                     </div>
