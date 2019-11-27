@@ -127,10 +127,10 @@ get_header(); ?>
                 global $post;
                 $args = array(
                     'post_type' => 'post',
-                    'posts_per_page' => '11',
+                    'posts_per_page' =>5,
+                    'category__not_in' => 3
 
                 );
-                $i = 1;
 
                 $head_query  = new WP_Query($args);
                 $j = 1;
@@ -139,7 +139,7 @@ get_header(); ?>
                     $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_large');
                     $image = $image[0];
                     
-                    if($j == 10){ ?>
+                    if($j == 4){ ?>
                         <div class="col-md-4">
                             <a href="<?php the_permalink(); ?>">
                                 <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
@@ -150,7 +150,7 @@ get_header(); ?>
                             </a>
 
 
-                    <?php }elseif($j == 11){ ?>
+                    <?php }elseif($j == 5){ ?>
                             <a href="<?php the_permalink(); ?>">
                                 <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
                                     <div class="blog-list-content">
@@ -211,7 +211,7 @@ get_header(); ?>
                 <a href="<?php the_permalink(); ?>">
                     <article class="blog-list-item lg" style="background-image: url('<?php echo $image; ?>')">
                         <div class="blog-list-content">
-                            <h4><?php the_title(); ?></h4>
+                            <h4><?php echo wp_trim_words(get_the_title(), 7); ?></h4>
                         </div>
                     </article>
                 </a>
