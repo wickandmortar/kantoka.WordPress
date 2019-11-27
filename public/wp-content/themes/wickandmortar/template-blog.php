@@ -231,7 +231,8 @@ get_header(); ?>
 
 
 <!-- Brands List -->
-<section class="blog-list blog-page-brands">
+
+<!-- <section class="blog-list blog-page-brands">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -280,7 +281,7 @@ get_header(); ?>
         </div>
     </div>
 </section>
-
+ -->
 
     
 <?php get_footer(); ?>
