@@ -3,6 +3,7 @@
 include 'inc/menu.php';
 include 'inc/enqueue.php';
 include 'inc/widget.php';
+include 'inc/acf.php';
 
 
 
