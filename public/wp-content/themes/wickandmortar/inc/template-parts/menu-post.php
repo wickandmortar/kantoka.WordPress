@@ -19,32 +19,39 @@
             $image = $image[0];
             if($i == 1){ ?>
 
-
-                <div class="col-md-6">
-                    <div class="menu-featured-item lg" style="background-image: url('<?php echo $image; ?>')">
-                        <div class="menu-featured-item-content">
-                            <h4><?php the_title(); ?></h4>
-                        </div>
+                
+                    <div class="col-md-6">
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="menu-featured-item lg" style="background-image: url('<?php echo $image; ?>')">
+                                <div class="menu-featured-item-content">
+                                    <h4><?php the_title(); ?></h4>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
+                
 
             <?php  }else if($i == 2){ ?>
 
                     <div class="col-md-6 menu-featured-item-sm-container">
-                        <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
+                        <a href="<?php the_permalink(); ?>">
+                           <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
                             <div class="menu-featured-item-content">
                                 <h4><?php the_title(); ?></h4>
                             </div>
-                        </div>
+                        </div> 
+                        </a>
+                        
 
 
                 <?php  } else{ ?>
-
+                        <a href="<?php the_permalink(); ?>">
                         <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
                             <div class="menu-featured-item-content">
                                 <h4><?php the_title(); ?></h4>
                             </div>
                         </div>
+                        </a>
                     </div>
 
                 <?php }
@@ -61,22 +68,27 @@
             $image = $image[0];
             if($i == 1){ ?>
 
-
+                
                 <div class="col-md-6">
-                    <div class="menu-featured-item lg" style="background-image: url('<?php echo $image; ?>')">
-                        <div class="menu-featured-item-content">
-                            <h4><?php the_title(); ?></h4>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="menu-featured-item lg" style="background-image: url('<?php echo $image; ?>')">
+                            <div class="menu-featured-item-content">
+                                <h4><?php the_title(); ?></h4>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
+
 
             <?php  } else if($i == 2){ ?>
                 <div class="col-md-6 menu-featured-item-sm-container">
+                    <a href="<?php the_permalink(); ?>">
                     <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
                         <div class="menu-featured-item-content">
                             <h4><?php the_title(); ?></h4>
                         </div>
                     </div>
+                    </a>
             <?php }
 
         $i++;
@@ -94,11 +106,13 @@
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');
             $image = $image[0];
         ?>
-            <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
-                <div class="menu-featured-item-content">
-                    <h4><?php the_title(); ?></h4>
+            <a href="<?php the_permalink(); ?>">
+                <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
+                    <div class="menu-featured-item-content">
+                        <h4><?php the_title(); ?></h4>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
 
     <?php
@@ -113,11 +127,13 @@
 
 
                 <div class="col-md-6">
-                    <div class="menu-featured-item lg" style="background-image: url('<?php echo $image; ?>')">
-                        <div class="menu-featured-item-content">
-                            <h4><?php the_title(); ?></h4>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="menu-featured-item lg" style="background-image: url('<?php echo $image; ?>')">
+                            <div class="menu-featured-item-content">
+                                <h4><?php the_title(); ?></h4>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
             <?php
@@ -135,18 +151,22 @@
                 $image = $image[0];
                 if($i==1){ ?>
                     <div class="col-md-6 menu-featured-item-sm-container">
-                        <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
-                            <div class="menu-featured-item-content">
-                                <h4><?php the_title(); ?></h4>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
+                                <div class="menu-featured-item-content">
+                                    <h4><?php the_title(); ?></h4>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
                 <?php }else{ ?>
-                        <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
-                            <div class="menu-featured-item-content">
-                                <h4><?php the_title(); ?></h4>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
+                                <div class="menu-featured-item-content">
+                                    <h4><?php the_title(); ?></h4>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                 <?php }
@@ -170,28 +190,33 @@
             if($i ==1){ ?>
 
                 <div class="col-md-6">
-                    <div class="menu-featured-item lg" style="background-image: url('<?php echo $image; ?>')">
-                        <div class="menu-featured-item-content">
-                            <h4><?php the_title(); ?></h4>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="menu-featured-item lg" style="background-image: url('<?php echo $image; ?>')">
+                            <div class="menu-featured-item-content">
+                                <h4><?php the_title(); ?></h4>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             <?php }elseif($i ==2){ ?>
                 <div class="col-md-6 menu-featured-item-sm-container">
-                    <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
-                        <div class="menu-featured-item-content">
-                            <h4><?php the_title(); ?></h4>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
+                            <div class="menu-featured-item-content">
+                                <h4><?php the_title(); ?></h4>
+                            </div>
                         </div>
-                    </div>                
+                    </a>             
 
             <?php }else{ ?>
                     
-
-                    <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
-                        <div class="menu-featured-item-content">
-                            <h4><?php the_title(); ?></h4>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="menu-featured-item sm" style="background-image: url('<?php echo $image; ?>')">
+                            <div class="menu-featured-item-content">
+                                <h4><?php the_title(); ?></h4>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
 
