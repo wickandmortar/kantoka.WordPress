@@ -27,6 +27,7 @@
 .blog--join-circle{
 	padding-top: 140px;
 	padding-bottom: 140px;
+
 	.join-circle-container{
 		background: none;
 
@@ -34,6 +35,10 @@
 			background: #fff;
 			padding-top: 60px;
 			padding-bottom: 60px;
+
+			p{
+				font-size: 22px;
+			}
 		}
 	}
 }
