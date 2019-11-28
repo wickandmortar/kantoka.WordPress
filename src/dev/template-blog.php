@@ -25,7 +25,7 @@ get_header(); ?>
                 global $post;
                 $args = array(
                     'post_type' => 'post',
-                    'posts_per_page' =>5,
+                    'posts_per_page' =>3,
                     'category__not_in' => 3
 
                 );
@@ -35,32 +35,8 @@ get_header(); ?>
                 if($head_query -> have_posts()): while($head_query -> have_posts()): $head_query ->the_post();
  
                     $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_large');
-                    $image = $image[0];
-                    
-                    if($j == 4){ ?>
-                        <div class="col-md-4">
-                            <a href="<?php the_permalink(); ?>">
-                                <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
-                                    <div class="blog-list-content">
-                                        <h4><?php the_title(); ?></h4>
-                                    </div>
-                                </article>
-                            </a>
-
-
-                    <?php }elseif($j == 5){ ?>
-                            <a href="<?php the_permalink(); ?>">
-                                <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
-                                    <div class="blog-list-content">
-                                        <h4><?php the_title(); ?></h4>
-                                    </div>
-                                </article>
-                            </a>
-
-                        </div>
-
-                    <?php }else{ ?>
-
+                    $image = $image[0]; 
+                ?>
                         <div class="col-md-4">
                             <a href="<?php the_permalink(); ?>">                  
                                 <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
@@ -71,57 +47,10 @@ get_header(); ?>
                             </a>  
                         </div>
 
-                    <?php }
-
-
-                    $j++;
-                ?>
-
-               
-
 
             <?php
                 endwhile; endif; wp_reset_postdata();
             ?>
-
-
-
-            <div class="col-md-8">
-
-            <?php
-                global $post;
-                $args = array(
-                    'post_type' => 'post',
-                    'posts_per_page' => '1',
-                    'category_name' => 'featured'
-
-                );
-                $i = 1;
-
-                $head_query  = new WP_Query($args);
-                if($head_query -> have_posts()): while($head_query -> have_posts()): $head_query ->the_post();
- 
-                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');
-                    $image = $image[0];
-            ?>    
-
-
-                <a href="<?php the_permalink(); ?>">
-                    <article class="blog-list-item lg" style="background-image: url('<?php echo $image; ?>')">
-                        <div class="blog-list-content">
-                            <h4><?php echo wp_trim_words(get_the_title(), 7); ?></h4>
-                        </div>
-                    </article>
-                </a>
-
-            <?php
-                endwhile; endif; wp_reset_postdata();
-            ?>
-
-
-
-                
-            </div>
 
         </div>
     </div>
@@ -144,7 +73,7 @@ get_header(); ?>
 
             <div class="col-md-4">                    
                 <a href="/brands/brnt.html">
-                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/brands/brnt/BRNT-Designs-Full Logo-Black.png')">
+                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/brands/brnt/BRNT-Designs-Full Logo-Black.png')">
                         <div class="blog-list-content">
                             <h4>Brnt</h4>
                         </div>
@@ -153,7 +82,7 @@ get_header(); ?>
             </div>
             <div class="col-md-4">                    
                 <a href="/brands/vessel.html">
-                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/brands/vessel/VESSEL Logo.png')">
+                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/brands/vessel/VESSEL Logo.png')">
                         <div class="blog-list-content">
                             <h4>vessel</h4>
                         </div>
@@ -162,7 +91,7 @@ get_header(); ?>
             </div>
             <div class="col-md-4">                    
                 <a href="/brands/xvape.html">                   
-                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/brands/xvape/xvape-logo.jpg')">
+                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/brands/xvape/xvape-logo.jpg')">
                         <div class="blog-list-content">
                             <h4>Xvape</h4>
                         </div>
@@ -180,6 +109,37 @@ get_header(); ?>
     </div>
 </section>
  -->
+    <?php
+        $text = get_field('kantoka_cta_text');
+        $ID = get_field('kantoka_cta_ID')
+    ?>
+    <section class="join-circle blog--join-circle" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/pattern.png');">
+        <div class="join-circle-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="row">
+                            
+                            <div class="col-md-6">
+                                <?php echo $text;?>
+                            </div>
+
+                            <div class="col-md-5 join-circle-content offset-md-1">
+
+                                <!-- <form class="form my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Email Address" aria-label="Search">
+                                    <button class="btn btn-block" type="submit">Join the circle</button>
+                                </form> -->
+                                <?php echo do_shortcode('[gravityform id='.$ID.' title=false description=false ajax=true tabindex=49]'); ?>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     
 <?php get_footer(); ?>

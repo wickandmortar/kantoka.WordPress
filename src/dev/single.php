@@ -29,6 +29,18 @@
 						<?php
 						endwhile; endif;
 					?>
+
+                    <div class="row post_links">
+                        <div class="col-sm-6 text-left"><?php previous_post_link('%link', 'Previous Post'); ?></div>
+                        <div class="col-sm-6 text-right"><?php next_post_link('%link', 'Next Post'); ?></div>
+                    </div>
+
+
+
+
+
+
+
                 </div>
             </div>
 

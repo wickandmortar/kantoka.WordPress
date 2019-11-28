@@ -32,4 +32,50 @@ acf_add_local_field_group(array(
 	),
 ));
 
+
+
+acf_add_local_field_group(array(
+
+	'key' => 'kantoka_blog_form_group',
+	'title' => 'Kantoka CTA',
+	'fields' => array(
+	
+
+		array(
+			'key' => 'kantoka_cta_text',
+			'label' => 'CTA Text',
+			'name' => 'kantoka_cta_text',
+			'type' => 'wysiwyg',
+			'default_value'=> '<h3 class="join-circle-title">GROW YOUR KNOW</h3><br /><p>The Canadian cannabis industry is quickly evolving and Kantoka is keeping pace.</p><p>Sign-up for industry and company updates, new product releases, events, giveaways, exclusive perks, and more!</p>'
+		),	
+
+		array(
+			'key' => 'kantoka_cta_ID',
+			'label' => 'Gravity Form ID',
+			'name' => 'kantoka_cta_ID',
+			'type' => 'text',
+		),
+		
+		
+	),
+
+	'location' => array(
+		array(
+			array(
+				'param' => 'page_template',
+				'operator' => '==',
+				'value' => 'template-blog.php',
+			),
+		),
+	),
+));
+
+
+
+
+
+
+
+
+
 endif;
