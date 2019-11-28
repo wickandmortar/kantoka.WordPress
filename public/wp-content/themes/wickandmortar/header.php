@@ -46,12 +46,6 @@
                                     <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt=""></a>
                                     
                                 </div>
-                                <div class="header_search_area">
-                                    <form class="form-inline my-2 my-lg-0">
-                                        <input class="form-control mr-sm-2" type="text" placeholder="What are you looking for today?..." aria-label="Search">
-                                        <button class="btn btn-sm" type="submit">Search</button>
-                                    </form>
-                                </div>
                             </div>
                         </div>
 
