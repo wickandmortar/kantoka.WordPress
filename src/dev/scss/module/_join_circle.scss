@@ -41,4 +41,14 @@
 			}
 		}
 	}
+
+	.gform_wrapper .gform_footer{
+		margin-top: 0;
+	}
+
+	.ginput_container {
+		input[type="text"]{
+			margin-bottom: 0 !important;
+		}
+	}
 }
