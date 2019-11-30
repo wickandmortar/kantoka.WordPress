@@ -83,7 +83,7 @@ gulp.task('watch', function () {
         'dev/scss/*.scss',
         'dev/scss/**/*.scss',
         '!dev/scss/blocks/*',
-    ], gulp.series(['sass']));
+    ], gulp.series(['sass','inject']));
 
     gulp.watch([
         '!dev/scss/**',

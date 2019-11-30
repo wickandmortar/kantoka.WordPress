@@ -1,4 +1,5 @@
 // Base
+@import 'base/mixins.scss';
 @import 'base/fonts.scss';
 @import 'base/variable';
 @import 'base/override';
@@ -20,3 +21,9 @@
 @import 'module/about';
 @import 'module/brands';
 @import 'module/product_list';
+@import 'module/home_hero';
+@import 'module/left_right_content';
+@import 'module/home_video';
+@import 'module/home_mission';
+@import 'module/home_features';
+@import 'module/instagram';

@@ -1,0 +1,113 @@
+.home_video{
+	padding:120px 0;
+	background-image: url('../images/pattern.png');
+
+	@include medium{
+		padding:70px 0;
+	}
+
+	@include small{
+		padding:50px 0;
+	}
+	@include extraSmall{
+		padding:30px 0;
+	}
+	.container{
+		max-width: 1050px;
+		position: relative;
+
+		.text{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+
+} 
+
+
+
+    .youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+    }
+    
+    .youtube-player img{
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 120px;
+        width: 500px;
+        left: 50%;
+        top: 50%;
+        /*margin-left: -36px;*/
+        position: absolute;
+        background: url("../images/video_icon.png") no-repeat;
+        cursor: pointer;
+        background-size:100px;
+        background-position: center;
+        transform:translate(-50%,-50%);
+
+        @include extraSmall{
+			 background-size:80px;
+		}
+
+        .text{
+        	text-transform: uppercase;
+        	font-size: 35px;
+        	color:#fff;
+        	width: 100%;
+        	text-align: center;
+        	font-family: DinPro;
+        	font-weight: 700;
+        	letter-spacing: 5px;
+
+
+
+        	@include small{
+				font-size: 20px;
+			}
+
+        	@include extraSmall{
+				font-size: 15px;
+			}
+        }
+    }
+

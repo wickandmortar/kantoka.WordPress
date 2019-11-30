@@ -47,14 +47,14 @@
                 p{
                     visibility: hidden;
                     opacity: 0;
-                    max-height: 0;
+                    /*max-height: 0;*/
                     margin: 0;
                     @include transition(all 0.3s ease-in-out);
                 }
             }
             &:hover{
                 background-image: none !important;
-                background-color: $pink;
+                background-color: #000;
                 @include transition(all 0.3s ease-in-out);
                 .feature-table-content{
                     @include transition(all 0.3s ease-in-out);
@@ -65,10 +65,15 @@
                         @include transition(all 0.3s ease-in-out);
                     }
                     h2{
+                    	color:#fff;
                         &:before{
                             @include transition(all 0.3s ease-in-out);
                             background-color: $white;
                         }
+                    }
+
+                    p{
+                    	color:#fff;
                     }
                 }
             }

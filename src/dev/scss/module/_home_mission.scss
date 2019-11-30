@@ -1,0 +1,65 @@
+.home_mission{
+	background-color:#E0C8C8;
+
+
+	h2{
+		@include mediumToLarge{
+			font-size: 33px;
+			margin-bottom: 35px;
+
+			&:before{
+				bottom: -25px;
+			}
+		}
+
+		@include small{
+			font-size: 35px;
+		}
+		@include extraSmall{
+			font-size: 24px;
+		}
+	}
+	p{
+
+	}
+
+	.text-col{
+		padding:150px 80px;
+
+		@include largeToLaptop{
+			padding:80px 30px;
+		}
+		@include mediumToLarge{
+			padding:50px 30px;
+		}
+
+
+
+		@include medium{
+			padding:50px 30px;
+		}
+		@include small{
+			padding:50px 30px;
+		}
+		@include extraSmall{
+			padding:50px 30px;
+		}
+	}
+
+	.img-col{
+		background-size:cover;
+		background-position: center;
+
+		@include medium{
+			min-height: 650px;
+		}
+		@include small{
+			min-height: 500px;
+		}
+
+		@include extraSmall{
+			min-height: 350px;
+		}
+
+	}
+}

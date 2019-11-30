@@ -1,0 +1,64 @@
+.left_right_content{
+
+	.text_col{
+		padding:120px 150px;
+		h2{
+			font-size: 42px;
+			font-family: DinPro-condensed;
+			font-weight: 700;
+
+			@include largeToLaptop{
+				font-size: 35px;
+			}
+
+
+			@include mediumToLarge{
+				font-size: 30px;
+				margin-bottom: 40px;
+
+				&:before{
+					bottom: -25px;
+				}
+			}
+
+			
+		}
+		p{
+			font-size: 20px;
+			font-family: DinPro;
+			@include largeToLaptop{
+				font-size: 17px;
+			}
+			@include mediumToLarge{
+				font-size: 15px;
+			}
+		}
+
+		@include twelveToFourteen{
+			padding:120px 100px;
+		}
+		@include largeToLaptop{
+			padding:60px 30px;
+		}
+		@include large{
+			padding:80px 50px;
+		}
+		@include mediumToLarge{
+			padding:50px 30px;
+		}
+
+	}
+
+	.img_col{
+		background-size:cover;
+		background-repeat: no-repeat;
+
+		@include extraLargeDesktop{
+			min-height: 600px;
+		}
+
+		@include medium{
+			min-height: 450px;
+		}
+	}
+}

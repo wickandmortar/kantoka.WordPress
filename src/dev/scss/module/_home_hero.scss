@@ -1,0 +1,72 @@
+.page_hero{
+	background-image:url('../images/hero.jpg');
+	background-size: cover;
+	padding:190px 0;
+	padding-bottom: 0px;
+	min-height: 750px;
+	position: relative;
+	background-position: center;
+
+	@include medium{
+		padding:120px 0;
+		min-height: 650px;
+	}
+
+	@include small{
+		padding:70px 0;
+		min-height: 400px;
+	}
+
+	h1{
+		font-family: DinPro-condensed;
+		font-weight: 700;
+		font-size: 110px;
+
+		@include laptop{
+			font-size: 105px;
+		}
+		@include large{
+			font-size: 85px;
+		}
+		@include medium{
+			font-size: 65px;
+		}
+		@include small{
+			font-size: 50px;
+		}
+		@include extraSmall{
+			font-size: 36px;
+		}
+	}
+
+	p{
+		font-family: DinPro-medium;
+		font-size: 28px;
+		letter-spacing: 5px;
+
+		@include small{
+			font-size: 22px;
+			letter-spacing: 3px;
+		}
+		@include extraSmall{
+			font-size: 18px;
+			letter-spacing: 3px;
+		}
+	}
+
+	.down-arrow{
+		position: absolute;
+		bottom: 75px;
+		left: 50%;
+		transform:translateX(-50%);
+		cursor:pointer;
+		
+		& img{
+			@include small{
+				width: 50px;
+			}
+		}
+
+		
+	}
+}
