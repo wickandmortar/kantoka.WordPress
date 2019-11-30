@@ -192,7 +192,8 @@ get_header(); ?>
 
             <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/feature-table-item-1-bg.png')">
                 <div class="feature-table-content text-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop.png" alt="">
+                    <img class="black" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop.png" alt="">
+                    <img class="white" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop-white.png" alt="">
                     <h2 class="bb black text-center">MARKETPLACE</h2>
                     <p>
                         If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
@@ -203,7 +204,8 @@ get_header(); ?>
 
             <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/feature-table-item-2-bg.jpg')">
                 <div class="feature-table-content text-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann.png" alt="">
+                    <img class="black" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann.png" alt="">
+                    <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann-white.png" alt="">
                     <h2 class="bb black text-center">TELE-MEDICINE</h2>
                     <p>
                         If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
@@ -213,7 +215,8 @@ get_header(); ?>
 
             <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/feature-table-item-3-bg.png')">
                 <div class="feature-table-content text-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop.png" alt="">
+                    <img class="black"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop.png" alt="">
+                    <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop-white.png" alt="">
                     <h2 class="bb black text-center">JOB PORTAL</h2>
                     <p>
                         If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
@@ -235,10 +238,7 @@ get_header(); ?>
                             <p>
                                 Sign-up for industry and company updates, new product releases, events, giveaways, exclusive perks, <span>and lots more!</span>
                             </p>
-                            <!-- <form class="form my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="text" placeholder="Email Address" aria-label="Search">
-                                <button class="btn btn-block" type="submit">Join the circle</button>
-                            </form> -->
+
                             <?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true tabindex=49]');
                            	?>
                         </div>

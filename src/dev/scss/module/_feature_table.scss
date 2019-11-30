@@ -43,6 +43,10 @@
                     @include respond-to(lg){
                         width: 80px;
                     }
+
+                    &.white{
+                    	display: none;
+                    }
                 }
                 p{
                     visibility: hidden;
@@ -74,6 +78,13 @@
 
                     p{
                     	color:#fff;
+                    }
+
+                    img.black{
+                    	display: none;
+                    }
+                    img.white{
+                    	display: inline-block;
                     }
                 }
             }
