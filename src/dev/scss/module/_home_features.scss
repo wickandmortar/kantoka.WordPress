@@ -5,6 +5,18 @@
 		margin-bottom: 150px;
 		font-size: 55px;
 
+		@include medium{
+			font-size: 40px;
+		}
+
+		@include small{
+			font-size: 35px;
+		}
+
+		@include extraSmall{
+			font-size: 20px;
+		}
+
 
 		&:before{
 			left: 50%;
@@ -18,24 +30,94 @@
 	.no-padding{
 		padding-left: 0;
 		padding-right: 0;
+
 	}
 
-	.inner{
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		width: fit-content;
-
-		p{
-			font-size: 28px;
-			margin-top: 130px;
-		}
-	}
+	
 
 	.img-col{
 		.col-md-6:nth-child(1){
 			margin-bottom: 30px;
+		}
+
+		.col-md-6{
+			@include medium{
+				margin-bottom: 30px;
+			}
+
+			img{
+				display: block;
+				margin:0 auto;
+			}
+		}
+	}
+
+	.text-col{
+		.inner{
+			h2{
+				@include mediumToLarge{
+					font-size: 30px;
+					margin-top: 30px;
+				}
+
+				@include medium{
+					font-size: 35px;
+				}
+				@include small{
+					font-size: 30px;
+				}
+				@include extraSmall{
+					font-size: 19px;
+				}
+			}
+			p{
+				font-size: 28px;
+				margin-top: 130px;
+
+				@include mediumToLarge{
+					margin-top: 70px;
+					font-size: 22px;
+				}
+
+				@include medium{
+					font-size: 25px;
+					margin-top: 20px;
+				}
+
+				@include small{
+					font-size: 20px;
+					margin-top: 20px;
+				}				
+				@include extraSmall{
+					font-size: 16px;
+					margin-top: 20px;
+				}
+			}
+
+			@include largeToLaptop{
+				padding-left: 20px;
+			}
+
+
+			@include minLaptop{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: fit-content;
+			}
+
+			@include mediumToLarge{
+				padding: 15px;
+				padding-left: 25px;
+			}
+
+			@include medium{
+				padding:0 15px;
+				text-align: center;
+			}
+
+
 		}
 	}
 

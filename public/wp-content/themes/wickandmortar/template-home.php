@@ -23,6 +23,7 @@ get_header(); ?>
 	<a href="#down-to-arrow" id="down-arrow" class="down-arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arow.png" alt=""></a>
 </section><!-- End Home Hero -->
 
+<section id="down-to-arrow"></section>
 <!-- Left Right Content -->
 <section class="left_right_content">
 	<div class="container-fluid">
@@ -85,7 +86,7 @@ get_header(); ?>
 	</div>
 </section><!-- End Home Mission  -->
 
-
+<!-- New Features -->
 <section class="new_featrues">
 	<div class="container">
 
@@ -98,7 +99,7 @@ get_header(); ?>
 
 		<div class="row">
 
-			<div class="col-md-6 no-padding  img-col">
+			<div class="col-md-6 no-padding  img-col order-2 order-md-1">
 				<div class="row">
 					<div class="col-md-6">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/coming_1.jpg" alt="">
@@ -115,7 +116,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="col-md-6 no-padding text-col">
+			<div class="col-md-6 no-padding text-col order-1 order-md-2">
 				<div class="inner">
 					<h2>SHOP HIGH-END <br /> ACCESSORIES</h2>
 					<p>Lifestyle essentials that will set <br />your heart ablaze</p>	
@@ -127,7 +128,7 @@ get_header(); ?>
 
 		<div class="row">
 
-			<div class="col-md-6 no-padding">
+			<div class="col-md-6 text-col no-padding">
 				<div class="inner">
 					<h2>DISCOVER RETAILERS <br />AND PRODUCERS</h2>
 					<p>Shop peer-reviewed and <br> hand selected brands</p>
@@ -155,7 +156,7 @@ get_header(); ?>
 
 		<div class="row">
 
-			<div class="col-md-6 no-padding img-col">
+			<div class="col-md-6 no-padding img-col order-2 order-md-1">
 				<div class="row">
 					<div class="col-md-6">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/coming_9.jpg" alt="">
@@ -172,7 +173,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="col-md-6 no-padding">
+			<div class="col-md-6 no-padding text-col order-1 order-md-2">
 				<div class="inner">
 					<h2>EXPLORE POPULAR <br /> STRAINS AND <br /> PRODUCTS</h2>
 					<p>A curated collection of high-end flower,<br /> oils,edibles,extracts and topicals</p>
@@ -183,49 +184,49 @@ get_header(); ?>
 
 
 	</div>
-</section>
+</section><!-- End New Features -->
 
 
-    <!-- Home Feature table -->
-    <section class="feature-table">
-        <div class="feature-table-container">
+<!-- Home Feature table -->
+<section class="feature-table">
+    <div class="feature-table-container">
 
-            <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/feature-table-item-1-bg.png')">
-                <div class="feature-table-content text-center">
-                    <img class="black" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop.png" alt="">
-                    <img class="white" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop-white.png" alt="">
-                    <h2 class="bb black text-center">MARKETPLACE</h2>
-                    <p>
-                        If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
-                    </p>
-                </div>
+        <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/feature-table-item-1-bg.png')">
+            <div class="feature-table-content text-center">
+                <img class="black" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop.png" alt="">
+                <img class="white" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop-white.png" alt="">
+                <h2 class="bb black text-center">MARKETPLACE</h2>
+                <p>
+                    If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
+                </p>
             </div>
-
-
-            <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/feature-table-item-2-bg.jpg')">
-                <div class="feature-table-content text-center">
-                    <img class="black" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann.png" alt="">
-                    <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann-white.png" alt="">
-                    <h2 class="bb black text-center">TELE-MEDICINE</h2>
-                    <p>
-                        If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
-                    </p>
-                </div>
-            </div>
-
-            <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/feature-table-item-3-bg.png')">
-                <div class="feature-table-content text-center">
-                    <img class="black"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop.png" alt="">
-                    <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop-white.png" alt="">
-                    <h2 class="bb black text-center">JOB PORTAL</h2>
-                    <p>
-                        If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
-                    </p>
-                </div>
-            </div>
-
         </div>
-    </section>
+
+
+        <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/feature-table-item-2-bg.jpg')">
+            <div class="feature-table-content text-center">
+                <img class="black" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann.png" alt="">
+                <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann-white.png" alt="">
+                <h2 class="bb black text-center">TELE-MEDICINE</h2>
+                <p>
+                    If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
+                </p>
+            </div>
+        </div>
+
+        <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/feature-table-item-3-bg.png')">
+            <div class="feature-table-content text-center">
+                <img class="black"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop.png" alt="">
+                <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop-white.png" alt="">
+                <h2 class="bb black text-center">JOB PORTAL</h2>
+                <p>
+                    If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <!-- CTA -->
 <section class="join-circle" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/pattern.png');">

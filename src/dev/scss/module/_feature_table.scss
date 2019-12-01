@@ -1,6 +1,9 @@
 .feature-table{
     padding: 0;
     margin: 0;
+    @include medium{
+    	padding-bottom: 25px;
+    }
     .feature-table-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -23,6 +26,10 @@
             }
             @include respond-to(sm){
                 height: 700px;
+            }
+
+            @include medium{
+            	margin-bottom: 30px;
             }
             
             .feature-table-content{
@@ -55,6 +62,8 @@
                     margin: 0;
                     @include transition(all 0.3s ease-in-out);
                 }
+
+
             }
             &:hover{
                 background-image: none !important;
@@ -88,6 +97,8 @@
                     }
                 }
             }
+
+
         }
     }
 }

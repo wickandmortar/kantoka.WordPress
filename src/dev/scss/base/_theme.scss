@@ -186,3 +186,9 @@ hr{
 img{
 	max-width: 100%;
 }
+
+p{
+	@include extraSmall{
+		font-size: 18px;
+	}
+}

@@ -76,6 +76,9 @@
         li{
             display: inline-block;
             padding-right: 30px;
+            @include mediumToLarge{
+            	padding-right: 15px;
+            }
             a{
                 width: 90px;
                 height: 90px;
@@ -87,6 +90,24 @@
                 border: 1px solid $lightgray;
                 .iconify{
                     color: $black;
+                }
+
+                @include largeToLaptop{
+                	width: 65px;
+                	height: 65px;
+
+                	svg{
+                		width: 40px;
+                	}
+                }
+
+                @include mediumToLarge{
+                	width: 55px;
+                	height: 55px;
+
+                	svg{
+                		width: 30px;
+                	}
                 }
             }
         }

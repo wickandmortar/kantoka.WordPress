@@ -21,6 +21,10 @@
 				}
 			}
 
+			@include extraSmall{
+				font-size: 21px;
+			}
+
 			
 		}
 		p{
@@ -31,6 +35,10 @@
 			}
 			@include mediumToLarge{
 				font-size: 15px;
+			}
+
+			@include extraSmall{
+				font-size: 18px;
 			}
 		}
 

@@ -118,6 +118,10 @@
             opacity: 0;
             z-index: -1;
             transform: translateX(15px);
+
+            @include medium{
+            	padding:0 15px;
+            }
             @include transition(all 0.3s ease-in-out);
             .row{
                 >.col-md-8{

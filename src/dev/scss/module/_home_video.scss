@@ -24,14 +24,25 @@
 		}
 	}
 
+	.youtube-player{
 
-} 
+			max-width: 90%;
+			display: block;
+			margin:0 auto;
+
+			img{
+				width: 100%;
+			}
+
+	}
 
 
+}
 
     .youtube-player {
         position: relative;
         padding-bottom: 56.23%;
+        padding-bottom: 50%;
         /* Use 75% for 4:3 videos */
         height: 0;
         overflow: hidden;

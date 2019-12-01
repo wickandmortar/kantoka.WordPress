@@ -31,6 +31,13 @@
 }
 
 
+@mixin minLaptop{
+	@media only screen and(min-width: 992px){
+		@content;
+	}
+}
+
+
 @mixin large{
 	@media only screen and(max-width: 991px){
 		@content;
