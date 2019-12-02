@@ -64,8 +64,16 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="youtube-player" data-id="6lt2JfJdGSY"></div>
+				<!-- <div class="youtube-player" data-id="6lt2JfJdGSY"></div> -->
 				<!-- <div class="text"><h3>Welcome to Kantoka</h3></div> -->
+				
+				<div id="video_container">
+					<a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/video.jpg" alt=""></a>
+				</div>
+				<div style="display: none" class="iframe_container">
+					372464535
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -118,7 +126,7 @@ get_header(); ?>
 
 			<div class="col-md-6 no-padding text-col order-1 order-md-2">
 				<div class="inner">
-					<h2>SHOP HIGH-END <br /> ACCESSORIES</h2>
+					<h2 class="bb pink">SHOP HIGH-END <br /> ACCESSORIES</h2>
 					<p>Lifestyle essentials that will set <br />your heart ablaze</p>	
 				</div>
 				
@@ -130,7 +138,7 @@ get_header(); ?>
 
 			<div class="col-md-6 text-col no-padding">
 				<div class="inner">
-					<h2>DISCOVER RETAILERS <br />AND PRODUCERS</h2>
+					<h2 class="bb pink">DISCOVER RETAILERS <br />AND PRODUCERS</h2>
 					<p>Shop peer-reviewed and <br> hand selected brands</p>
 				</div>
 			</div>
@@ -175,7 +183,7 @@ get_header(); ?>
 
 			<div class="col-md-6 no-padding text-col order-1 order-md-2">
 				<div class="inner">
-					<h2>EXPLORE POPULAR <br /> STRAINS AND <br /> PRODUCTS</h2>
+					<h2 class="bb pink">EXPLORE POPULAR <br /> STRAINS AND <br /> PRODUCTS</h2>
 					<p>A curated collection of high-end flower,<br /> oils,edibles,extracts and topicals</p>
 				</div>
 			</div>
@@ -199,6 +207,8 @@ get_header(); ?>
                 <p>
                     If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
                 </p>
+
+                <a class="pink" href="#">Get Early Access</a>
             </div>
         </div>
 
@@ -211,6 +221,7 @@ get_header(); ?>
                 <p>
                     If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
                 </p>
+                <a class="pink" href="#">Get Early Access</a>
             </div>
         </div>
 
@@ -222,6 +233,7 @@ get_header(); ?>
                 <p>
                     If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
                 </p>
+                <a class="pink" href="#">Get Early Access</a>
             </div>
         </div>
 

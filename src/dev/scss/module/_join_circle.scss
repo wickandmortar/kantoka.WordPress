@@ -1,10 +1,10 @@
 .join-circle{
-    padding: 140px 80px;
+    padding: 170px 80px;
     background-size: auto;
     background-repeat: repeat;
 
     @include mediumToLarge{
-    	padding:70px 30px;
+    	padding:100px 60px;
     }
     @include small{
     	padding:70px 30px;

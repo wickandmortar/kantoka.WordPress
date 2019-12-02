@@ -119,11 +119,6 @@ class Ch_Th_Gen_Admin {
 			'manage_options', // $capability (string) (Required) The capability required for this menu to be displayed to the user.
 			$this->plugin_name, // $menu_slug (string) (Required) The slug name to refer to this menu by (should be unique for this menu).
 			array($this, 'display_options_page'), // $function (callable) (Optional) The function to be called to output the content for this page Default value: ''
-			'dashicons-image-filter', // $icon_url (string) (Optional) The URL to the icon to be used for this menu.
-			// * Pass a base64-encoded SVG using a data URI, which will be colored to match the color scheme. This should begin with 'data:image/svg+xml;base64,'.
-			// * Pass the name of a Dashicons helper class to use a font icon, e.g. 'dashicons-chart-pie'.
-			// * Pass 'none' to leave div.wp-menu-image empty so an icon can be added via CSS.
-			// Default value: ''
 			60 // $position (int) (Optional) The position in the menu order this one should appear. Default value: null
 			);
 	}

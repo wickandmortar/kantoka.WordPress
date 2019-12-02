@@ -55,12 +55,24 @@
                     	display: none;
                     }
                 }
-                p{
+                p,a{
                     visibility: hidden;
                     opacity: 0;
                     /*max-height: 0;*/
                     margin: 0;
                     @include transition(all 0.3s ease-in-out);
+                }
+
+                a{
+					background-color:pink;
+					padding:20px 30px;
+					display: inline-block;
+					margin-top: 50px;
+					color:#000;
+					font-size: 20px;
+					font-family: DinPro-condensed;
+					font-weight: 500;
+					text-transform: uppercase;
                 }
 
 
@@ -71,7 +83,7 @@
                 @include transition(all 0.3s ease-in-out);
                 .feature-table-content{
                     @include transition(all 0.3s ease-in-out);
-                    p{
+                    p,a{
                         visibility: visible;
                         opacity: 1;
                         max-height: 190px;

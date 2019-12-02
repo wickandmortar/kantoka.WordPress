@@ -32,4 +32,3 @@ function wickandmortar_block_category( $categories, $post ) {
 	);
 }
 add_filter( 'block_categories', 'wickandmortar_block_category', 10, 2);
-

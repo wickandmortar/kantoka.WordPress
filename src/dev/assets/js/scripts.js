@@ -29,37 +29,14 @@ jQuery(document).ready(function($){
     $('.menu-footer-menu-container').addClass('footer-menu');
     $('.menu-footer-menu-container ul').addClass('main-menu');
 
+    // Vimeo loading video
+    var video_id = $('.iframe_container').html();
+    $('#video_container a').click(function(e) {
+        e.preventDefault();
+        $('#video_container').html('<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'+ video_id +'?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>');
+      
+    }); // End vimeo video
 
 
+});// Document ready
 
-});
-
-
-// YouTube Loading Script. Don't put it inside document.ready()
-document.addEventListener("DOMContentLoaded",
-    function() {
-        var div, n,
-            v = document.getElementsByClassName("youtube-player");
-        for (n = 0; n < v.length; n++) {
-            div = document.createElement("div");
-            div.setAttribute("data-id", v[n].dataset.id);
-            div.innerHTML = labnolThumb(v[n].dataset.id);
-            div.onclick = labnolIframe;
-            v[n].appendChild(div);
-        }
-    });
-
-function labnolThumb(id) {
-    var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
-        play = '<div class="play"><span class="text">Welcome to Kantoka</span></div>';
-    return thumb.replace("ID", id) + play;
-}
-
-function labnolIframe() {
-    var iframe = document.createElement("iframe");
-    var embed = "https://www.youtube.com/embed/ID?autoplay=1";
-    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("allowfullscreen", "1");
-    this.parentNode.replaceChild(iframe, this);
-}
