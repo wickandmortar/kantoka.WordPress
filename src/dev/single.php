@@ -31,8 +31,19 @@
 					?>
 
                     <div class="row post_links">
-                        <div class="col-sm-6 text-left"><?php previous_post_link('%link', 'Previous Post'); ?></div>
-                        <div class="col-sm-6 text-right"><?php next_post_link('%link', 'Next Post'); ?></div>
+
+                        <div class="col-sm-4 col-6 text-left order-1 prev_post my-auto">
+                            <?php previous_post_link('%link', '<span class="iconify" data-icon="dashicons:arrow-left-alt" data-inline="false"></span> Previous Post'); ?>
+                        </div>
+
+                        <div class="col-sm-4 my-auto order-3 order-sm-2">
+                            <a class="button btn btn-block back_to_blog" href="/blog">Back to Blog</a>
+                        </div>
+
+                        <div class="col-sm-4 col-6 text-right order-2 next_post my-auto">
+                            <?php next_post_link('%link', 'Next Post <span class="iconify" data-icon="dashicons:arrow-right-alt" data-inline="false"> '); ?>                 
+                        </div>
+
                     </div>
 
 
