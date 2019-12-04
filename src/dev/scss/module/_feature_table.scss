@@ -29,6 +29,7 @@
 
             @include medium{
             	margin-bottom: 30px;
+            	height: 500px;
             }
             
             .feature-table-content{
@@ -42,6 +43,13 @@
                 @include respond-to(lg){
                     padding-left: 15px;
                     padding-right: 15px;
+                }
+
+                @include medium{
+                	img.white,a.pink, p{
+                		display: none;
+                	}
+
                 }
                 img{
                     width: 110px;

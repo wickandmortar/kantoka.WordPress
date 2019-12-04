@@ -50,34 +50,43 @@
             <br>
             <div class="row">
 
-                <div class="col-md-4">                    
-                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/featured-1.jpg')">
-                        <div class="blog-list-content">
-                            <h4>Finding Your Ideal Dose</h4>
-                        </div>
-                    </article>   
-                </div>
-                <div class="col-md-4">              
-                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/featured-2.jpg')">
-                        <div class="blog-list-content">
-                            <h4>5 West Coast Retail Stores <br> You Should Check out</h4>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-4">                    
-                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/featured-3.jpg')">
-                        <div class="blog-list-content">
-                            <h4>Accessorize Your <br> Daily Ritual</h4>
-                        </div>
-                    </article>   
-                </div>
+                <?php
 
+                    $args = array(
+                        'post_type' => 'post', 
+                        'posts_per_page' => 3, 
+                        'cat' => 3
+                    );
+
+                    $post_query = new WP_Query($args);
+                    if($post_query-> have_posts()):while($post_query-> have_posts()): $post_query-> the_post();?>
+
+                        <div class="col-md-4">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php 
+                                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                                    $image = $image[0]; 
+                                 ?>                
+                                <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
+                                    <div class="blog-list-content">
+                                        <h4><?php the_title(); ?></h4>
+                                    </div>
+                                </article> 
+                            </a>   
+                        </div>
+
+
+
+                    <?php
+                    endwhile; endif; wp_reset_postdata();
+
+                ?>
 
             </div>
 
             <div class="row more_articles">
                 <div class="col-md-12 text-center">
-                    <a href="#" class="btn">See More Articles</a>
+                    <a href="/blog" class="btn">See More Articles</a>
                 </div>
             </div>
         </div>

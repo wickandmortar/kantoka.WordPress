@@ -1,5 +1,8 @@
 .left_right_content{
 
+	@include medium{
+		margin-top: 25px;
+	}
 	.text_col{
 		padding:120px 150px;
 		h2{
@@ -54,6 +57,9 @@
 		@include mediumToLarge{
 			padding:50px 30px;
 		}
+		@include extraSmall{
+			padding:30px 15px;
+		}
 
 	}
 
@@ -66,7 +72,18 @@
 		}
 
 		@include medium{
-			min-height: 450px;
+			min-height: 400px;
+			background-size:contain;
+			background-position: center;
 		}
+
+		@include small{
+			min-height: 350px;
+		}
+		@include extraSmall{
+			min-height: 250px;
+		}
+
+
 	}
 }

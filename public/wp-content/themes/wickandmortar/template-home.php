@@ -269,7 +269,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-md-10 offset-md-1">
                     <div class="row">
-                        <div class="col-md-5 join-circle-content">
+                        <div class="col-md-5 join-circle-content order-2 order-md-1">
                             <p>
                                 Sign-up for industry and company updates, new product releases, events, giveaways, exclusive perks, <span>and lots more!</span>
                             </p>
@@ -277,7 +277,7 @@ get_header(); ?>
                             <?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true tabindex=49]');
                            	?>
                         </div>
-                        <div class="col-md-6 offset-md-1">
+                        <div class="col-md-6 offset-md-1 order-1 order-md-2">
                             <h1 class="join-circle-title">
                                 Join the circle
                             </h1>
@@ -319,7 +319,7 @@ get_header(); ?>
 			</div>
 
 			<div class="col-12 text-center">
-				<a href="#">See more on Instagram ></a>
+				<a href="https://www.instagram.com/shopkantoka/" target="_blank">See more on Instagram ></a>
 			</div>
 
 		</div>
