@@ -126,10 +126,6 @@ get_header(); ?>
 
                             <div class="col-md-5 join-circle-content offset-md-1">
 
-                                <!-- <form class="form my-2 my-lg-0">
-                                    <input class="form-control mr-sm-2" type="text" placeholder="Email Address" aria-label="Search">
-                                    <button class="btn btn-block" type="submit">Join the circle</button>
-                                </form> -->
                                 <?php echo do_shortcode('[gravityform id='.$ID.' title=false description=false ajax=true tabindex=49]'); ?>
                             </div>
 

@@ -75,3 +75,19 @@
 		}
 	}
 }
+
+.home--join-circle{
+	.gform_confirmation_wrapper_1{
+		position: absolute;
+	    background: #fff;
+	    height: 100%;
+	    width: 100%;
+
+	    .gform_confirmation_message_1{
+	    	position: absolute;
+		    width: 100%;
+		    top: 50%;
+		    transform: translateY(-50%);
+	    }
+	}
+}
