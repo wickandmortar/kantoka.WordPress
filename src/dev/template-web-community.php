@@ -28,7 +28,7 @@ get_header(); ?>
 			<div class="col-md-6 text_col order-2 order-md-1 my-auto">
 				<h2 class="bb pink">AT THE FOREFRONT</h2>
 				<p>Kantoka is looking for ambassadors, folks who love to share their voice with purpose and intention. If you've been impacted by cannabis in a meaningful way or have an authentic story to tell, it’s time to grab the mic. Our ambassador program is launching soon, with many perks. Let's talk!</p>
-				<a href="#">Connect with us ></a>
+				<a href="/#contact">Connect with us ></a>
 			</div>
 
 			<div class="col-md-6 img_col order-1 order-md-2" style="background:url('<?php echo get_template_directory_uri();?>/assets/images/forefront.jpg');">
@@ -46,7 +46,7 @@ get_header(); ?>
 				<p>Cannabis is often considered a muse, a source of inspiration and a connection to our higher selves. We are always looking for new voices and contributors. Have a story to tell? </p>
 
 				<p>Cannabis is all about connection, and Kantoka is all about connecting brands and audiences through information, education, and elevation.</p>
-				<a href="#">Submit your idea here ></a>
+				<a href="/#contact">Submit your idea here ></a>
 			</div>
 			
 		</div>
@@ -60,7 +60,7 @@ get_header(); ?>
 
 				<p>Want to know how you can get involved in the Pass it Forward program, or have a great idea on how Kantoka can give back to your community?</p>
 
-				<a href="#">Submit your idea here ></a>
+				<a href="/#contact">Submit your idea here ></a>
 			</div>
 
 			<div class="col-md-6 img_col order-1 order-md-2" style="background:url('<?php echo get_template_directory_uri();?>/assets/images/forward.jpg');">
