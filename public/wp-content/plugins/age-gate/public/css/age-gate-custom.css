@@ -1,0 +1,124 @@
+@font-face {
+    font-family: DinPro;
+    src: url(/wp-content/themes/wickandmortar/assets/fonts/DINPro.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: DinPro-condensed;
+    src: url(/wp-content/themes/wickandmortar/assets/fonts/DINPro-CondBold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.age-gate-heading{
+	display: none;
+}
+
+.age-gate-form{
+    background-color:rgba(255,255,255,.8);
+    margin-top:1px;
+}
+
+.age-gate{
+    margin-bottom:0;
+}
+.custom-markup{
+    width:100%;
+    max-width:1045px;
+    position:relative;
+    background-color:rgba(255,255,255,.8);
+    text-align:center;
+    padding:25px 0;
+    font-family:DINPro;
+    margin-bottom:70px;
+    color:#b7b7b7;
+    
+}
+.custom-markup a{
+    color:#b7b7b7;
+    font-size:16px;
+    text-decoration:none;
+}
+
+.age-gate-subheading{
+    font-family: DinPro-condensed;
+    font-weight:700;
+    font-size:92px;
+    text-transform:uppercase;
+}
+
+.age-gate-message{
+     font-family: DinPro;
+     font-size:19px;
+}
+
+.age-gate-form{
+    max-width:1045px;
+}
+
+.age-gate-form ol label{
+    display:none;
+}
+
+.age-gate-form ol input{
+    font-family: DinPro;
+    font-size:19px;
+    background-color:#000;
+    color:#b7b7b7;
+    border:none;
+}
+
+.age-gate-form ol input::-webkit-input-placeholder {
+    color:#b7b7b7;
+}
+.age-gate-form ol input:-moz-placeholder {
+    /* FF 4-18 */
+    color:#b7b7b7;
+}
+.age-gate-form ol input::-moz-placeholder {
+    /* FF 19+ */
+    color:#b7b7b7;
+}
+.age-gate-form ol input:-ms-input-placeholder {
+    /* IE 10+ */
+    color:#b7b7b7;
+}
+
+.age-gate-submit{
+    padding: 8px 15px;
+    width: 120px;
+    background: #000;
+    border: none;
+    color: #b7b7b7;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: DinPro;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+
+.site_logo{
+    float: left;
+    position: relative;
+    left: 0;
+    width: 1045px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+
+.age-gate-input, .age-gate-select{
+    max-width:120px;
+    padding:10px 15px;
+}
+
+.input_heading{
+    margin-top:70px;
+    font-family: DinPro;
+    font-size:19px;
+}
