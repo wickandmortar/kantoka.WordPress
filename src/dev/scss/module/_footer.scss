@@ -79,6 +79,12 @@
             @include mediumToLarge{
             	padding-right: 15px;
             }
+
+            @include extraSmall{
+            	padding-right: 4px;
+            }
+
+
             a{
                 width: 90px;
                 height: 90px;

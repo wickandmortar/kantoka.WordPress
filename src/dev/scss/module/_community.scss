@@ -1,0 +1,69 @@
+.community_hero{
+	background-image: url('../images/hero_bg.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	color:#fff;
+	h1{
+		color:#fff;
+	}
+
+	.img_col{
+		padding-top: 70px;
+	}
+
+	.text_col{
+		padding-right: 10%;
+
+		@include largeToLaptop{
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		@include mediumToLarge{
+			padding-right: 5%;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+		@include medium{
+			text-align: center;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+		h1{
+			@include mediumToLarge{
+				font-size: 40px;
+
+			}
+
+			@include medium{
+				&:before{
+					left: 50%;
+					transform:translateX(-50%);
+				}
+			}
+		}
+
+
+
+
+	}
+
+
+}
+
+
+.community_left_right{
+	a{
+		font-weight: 700;
+		color:#000;
+	}
+
+	.text_col{
+		h2{
+			@include mediumToLarge{
+				font-size: 24px;
+			}
+		}
+	}
+}
