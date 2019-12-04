@@ -180,6 +180,12 @@ $errors = self::$errors;
           }
         ?>
       </form>
+	  
+<div class="custom-markup">
+<a href='#'>Privacy Policy</a>   |    <a href='#'>Terms of Use & Code Conduct</a>
+</div>
+	  
+	  
     </div>
     <?php
       $after = '';

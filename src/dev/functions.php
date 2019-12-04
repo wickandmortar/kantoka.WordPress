@@ -45,7 +45,7 @@ function before_age_gate($before){
   return $before;
 
 }
-add_filter('age_gate_after', 'after_age_gate', 10, 1);
+//add_filter('age_gate_after', 'after_age_gate', 10, 1);
 
 function after_age_gate($after){
 

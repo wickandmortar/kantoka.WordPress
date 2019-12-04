@@ -22,7 +22,13 @@
 }
 
 .age-gate{
-    margin-bottom:0;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .custom-markup{
     width:100%;
@@ -34,6 +40,7 @@
     font-family:DINPro;
     margin-bottom:70px;
     color:#b7b7b7;
+    margin:0 auto;
     
 }
 .custom-markup a{
@@ -57,7 +64,9 @@
 .age-gate-form{
     max-width:1045px;
 }
-
+.age-gate-form ol{
+    padding-left:0;
+}
 .age-gate-form ol label{
     display:none;
 }
