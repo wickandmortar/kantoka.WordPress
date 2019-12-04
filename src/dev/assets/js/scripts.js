@@ -42,6 +42,7 @@ jQuery(document).ready(function($){
     $('.slider').bxSlider({
         controls:false,
         pager:false,
+        auto:true,
     });
 
     // Smooth Scrolling
