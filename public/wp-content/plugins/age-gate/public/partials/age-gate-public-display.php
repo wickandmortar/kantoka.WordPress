@@ -182,7 +182,7 @@ $errors = self::$errors;
       </form>
 	  
 <div class="custom-markup">
-<a href='#'>Privacy Policy</a>   |    <a href='#'>Terms of Use & Code Conduct</a>
+<a href='#'>Privacy Policy</a>   |    <a href='#'>Terms of Use</a>
 </div>
 	  
 	  
