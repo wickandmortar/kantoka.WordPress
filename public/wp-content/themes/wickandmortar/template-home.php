@@ -222,6 +222,7 @@ get_header(); ?>
     <div class="feature-table-container">
 
         <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/icon_1_img.jpg')">
+        	<div class="bg_container"></div>
             <div class="feature-table-content text-center">
                 <img class="black" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop.png" alt="">
                 <img class="white" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop-white.png" alt="">
@@ -236,6 +237,7 @@ get_header(); ?>
 
 
         <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/icon_2_img.jpg')">
+        	<div class="bg_container"></div>
             <div class="feature-table-content text-center">
                 <img class="black" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann.png" alt="">
                 <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann-white.png" alt="">
@@ -248,6 +250,7 @@ get_header(); ?>
         </div>
 
         <div class="feature-table-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/icon_3_img.jpg')">
+        	<div class="bg_container"></div>
             <div class="feature-table-content text-center">
                 <img class="black"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop.png" alt="">
                 <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop-white.png" alt="">
@@ -295,9 +298,9 @@ get_header(); ?>
 <section class="instagram">
 	<div class="container">
 		<div class="row">
+			<?php echo do_shortcode('[instagram-feed]');?>
 
-
-			<div class="col-md-4">
+<!-- 			<div class="col-md-4">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta_1.jpg" alt="">
 			</div>
 			<div class="col-md-4">
@@ -320,7 +323,7 @@ get_header(); ?>
 
 			<div class="col-12 text-center">
 				<a href="https://www.instagram.com/shopkantoka/" target="_blank">See more on Instagram ></a>
-			</div>
+			</div> -->
 
 		</div>
 	</div>

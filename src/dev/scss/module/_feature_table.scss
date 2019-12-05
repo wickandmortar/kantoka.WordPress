@@ -31,6 +31,18 @@
             	margin-bottom: 30px;
 
             }
+
+            .bg_container{
+            	display: none;
+            	position: absolute;
+            	height: 100%;
+            	width: 100%;
+            	background:rgba(0,0,0,.5);
+
+            	@include medium{
+            		display: block;
+            	}
+            }
             
             .feature-table-content{
                 position: absolute;
@@ -81,8 +93,8 @@
                 }
 
                 @include medium{
-                	height: 100%;
-                	background: rgba(0,0,0,.5);
+                	height: auto;
+                	/*background: rgba(0,0,0,.5);*/
                 	padding:25px 15px;
 
                 	img.black{

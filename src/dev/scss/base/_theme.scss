@@ -180,6 +180,10 @@ a{
 
 .gform_fields li{
 	padding-right: 0 !important;
+
+	@include medium{
+		padding-left: 0 !important;
+	}
 }
 
 hr{
