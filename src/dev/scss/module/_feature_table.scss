@@ -29,7 +29,7 @@
 
             @include medium{
             	margin-bottom: 30px;
-            	height: 500px;
+
             }
             
             .feature-table-content{
@@ -45,12 +45,7 @@
                     padding-right: 15px;
                 }
 
-                @include medium{
-                	img.white,a.pink, p{
-                		display: none;
-                	}
-
-                }
+                
                 img{
                     width: 110px;
                     margin-bottom: 30px;
@@ -63,11 +58,14 @@
                     }
                 }
                 p,a{
-                    visibility: hidden;
-                    opacity: 0;
-                    /*max-height: 0;*/
-                    margin: 0;
-                    @include transition(all 0.3s ease-in-out);
+                	@include minLarge{
+                		visibility: hidden;
+	                    opacity: 0;
+	                    /*max-height: 0;*/
+	                    margin: 0;
+	                    @include transition(all 0.3s ease-in-out);
+                	}
+                    
                 }
 
                 a{
@@ -82,11 +80,38 @@
 					text-transform: uppercase;
                 }
 
+                @include medium{
+                	height: 100%;
+                	background: rgba(0,0,0,.5);
+                	padding:25px 15px;
+
+                	img.black{
+                		display: none;
+                	}
+                	img.white{
+                		display: block;
+                		margin:0 auto;
+                		margin-bottom: 15px;
+                	}
+
+                	p,h2.black{
+                		color:#fff;
+                	}
+
+                	h2.black:before{
+                		background:#fff;
+                	}
+
+                }
+
 
             }
             &:hover{
-                background-image: none !important;
-                background-color: #000;
+            	@include minLarge{
+	            	background-image: none !important;
+	                background-color: #000;	
+            	}
+                
                 @include transition(all 0.3s ease-in-out);
                 .feature-table-content{
                     @include transition(all 0.3s ease-in-out);

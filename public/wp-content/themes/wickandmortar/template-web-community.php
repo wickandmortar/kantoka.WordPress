@@ -31,14 +31,14 @@ get_header(); ?>
 				<a href="/#contact">Connect with us ></a>
 			</div>
 
-			<div class="col-md-6 img_col order-1 order-md-2" style="background:url('<?php echo get_template_directory_uri();?>/assets/images/forefront.jpg');">
+			<div class="col-md-6 img_col order-1 order-md-2" style="background-image:url('<?php echo get_template_directory_uri();?>/assets/images/forefront.jpg');">
 			</div>
 
 		</div>
 
 		<div class="row">
 
-			<div class="col-md-6 img_col" style="background:url('<?php echo get_template_directory_uri();?>/assets/images/transform.jpg');">
+			<div class="col-md-6 img_col" style="background-image:url('<?php echo get_template_directory_uri();?>/assets/images/transform.jpg');">
 			</div>
 
 			<div class="col-md-6 text_col my-auto">
@@ -63,7 +63,7 @@ get_header(); ?>
 				<a href="/#contact">Submit your idea here ></a>
 			</div>
 
-			<div class="col-md-6 img_col order-1 order-md-2" style="background:url('<?php echo get_template_directory_uri();?>/assets/images/forward.jpg');">
+			<div class="col-md-6 img_col order-1 order-md-2" style="background-image:url('<?php echo get_template_directory_uri();?>/assets/images/forward.jpg');">
 			</div>
 
 		</div>

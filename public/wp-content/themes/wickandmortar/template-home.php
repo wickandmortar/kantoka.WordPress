@@ -227,7 +227,7 @@ get_header(); ?>
                 <img class="white" src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-shop-white.png" alt="">
                 <h2 class="bb black text-center">MARKETPLACE</h2>
                 <p>
-                    If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
+                    Consumers deserve brands that are more than just hype. Cruise our brand pages to learn more about the people behind your favourite products, reviews and top picks, facility tours, exclusive interviews, and everything else you need to know to feel informed and empowered in your purchasing decision.
                 </p>
 
                 <a class="pink" href="<?php home_url();?>/#contact">Get Early Access</a>
@@ -241,7 +241,7 @@ get_header(); ?>
                 <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-cann-white.png" alt="">
                 <h2 class="bb black text-center">TELE-MEDICINE</h2>
                 <p>
-                    If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
+                    Patients are the pioneers of legalization but still face barriers accessing medicine in the new legislative landscape. Here, you can connect with a licensed health practitioner and browse different licensed producers and learn more about their product offerings to determine what works best for you. It’s that easy.
                 </p>
                 <a class="pink" href="<?php home_url();?>/#contact">Get Early Access</a>
             </div>
@@ -253,7 +253,7 @@ get_header(); ?>
                 <img class="white"src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-desktop-white.png" alt="">
                 <h2 class="bb black text-center">JOB PORTAL</h2>
                 <p>
-                    If passion is what ignites you, purpose is how you serve others. With social responsibility at our core, we are committed to serving our communities with safe, legal and compliant content and products.
+                    If you love cannabis and want to help create a thriving and sustainable industry, check out our careers page. Our online recruitment platform is secure, confidential, and the first of its kind in Canada to connect employers and candidates in this global industry. Get educated, certified, and hired - all in one place.
                 </p>
                 <a class="pink" href="<?php home_url();?>/#contact">Get Early Access</a>
             </div>

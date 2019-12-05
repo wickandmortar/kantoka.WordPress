@@ -79,9 +79,11 @@
 
 		@include small{
 			min-height: 350px;
+			background-size: cover;
 		}
 		@include extraSmall{
 			min-height: 250px;
+			background-size: cover;
 		}
 
 
