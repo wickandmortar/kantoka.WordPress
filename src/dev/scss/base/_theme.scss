@@ -102,6 +102,9 @@ h2{
         letter-spacing: 3.5px;
     }
     
+    @include medium{
+    	text-align: center;
+    }
 }
 h3{
     font-size: 42px;
