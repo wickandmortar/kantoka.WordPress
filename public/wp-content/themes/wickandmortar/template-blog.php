@@ -19,40 +19,62 @@ get_header(); ?>
         </div>
         <br>
         <br>
-        <div class="row">
+        <div class="row post_holder">
+                
+            
 
-            <?php
-                global $post;
-                $args = array(
-                    'post_type' => 'post',
-                    'posts_per_page' =>3,
-                    'category__not_in' => 3
+                <?php
+                    global $post;
+                    $ourCurrentPage = get_query_var('paged');
+                    $args = array(
+                        'post_type' => 'post',
+                        'posts_per_page' =>3,
+                        'category__not_in' => 3,
+                        'paged' => $ourCurrentPage,
 
-                );
+                    );
 
-                $head_query  = new WP_Query($args);
-                $j = 1;
-                if($head_query -> have_posts()): while($head_query -> have_posts()): $head_query ->the_post();
- 
-                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_large');
-                    $image = $image[0]; 
+                    $head_query  = new WP_Query($args);
+                    $j = 1;
+                    if($head_query -> have_posts()): while($head_query -> have_posts()): $head_query ->the_post();
+     
+                        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_large');
+                        $image = $image[0]; 
+                    ?>
+                            <div class="col-md-4 single_blog">
+                                <a href="<?php the_permalink(); ?>">                  
+                                    <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
+                                        <div class="blog-list-content">
+                                            <h4><?php the_title(); ?></h4>
+                                        </div>
+                                    </article>
+                                </a>  
+                            </div>
+
+
+                <?php
+                    endwhile; 
+                    echo paginate_links(array(
+                      'total' => $head_query->max_num_pages
+                    ));
+
+
+                endif; wp_reset_postdata();
                 ?>
-                        <div class="col-md-4">
-                            <a href="<?php the_permalink(); ?>">                  
-                                <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
-                                    <div class="blog-list-content">
-                                        <h4><?php the_title(); ?></h4>
-                                    </div>
-                                </article>
-                            </a>  
-                        </div>
+
+                
 
 
-            <?php
-                endwhile; endif; wp_reset_postdata();
-            ?>
 
         </div>
+
+        <div class="row">
+            <div class="col-12">
+                <a id="load_posts" href="#" class="btn">See More Articles</a>
+            </div>
+        </div>
+
+
     </div>
 </section>
 

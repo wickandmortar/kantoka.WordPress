@@ -12,17 +12,33 @@ get_header(); ?>
 ?>
 <!-- Home Hero -->
 <section class="page_hero">
-	<div class="slider">
+	<div class="video_holder">
+		<video loop autoplay muted playsinline>
+        	<source src="<?php echo get_template_directory_uri(); ?>/assets/hp_hero.mp4" type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+        </video>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h1>WELCOME TO KANTOKA</h1>
+				<p>SOMETHING FOR EVERYONE</p>
+
+				<a href="#down-to-arrow" id="down-arrow" class="down-arrow">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arow.png" alt="">
+				</a>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+<!-- 	<div class="slider">
 
 		<div class="slder_content" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/images/kantoka-main-img.jpg');">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 text-center">
-						<h1>WELCOME TO KANTOKA</h1>
-						<p>SOMETHING FOR EVERYONE</p>
-					</div>
-				</div>
-			</div>
+			
 			
 		</div>
 
@@ -36,11 +52,9 @@ get_header(); ?>
 		
 		
 		
-	</div>
+	</div> -->
 
-		<a href="#down-to-arrow" id="down-arrow" class="down-arrow">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arow.png" alt="">
-		</a>
+		
 	
 
 </section><!-- End Home Hero -->

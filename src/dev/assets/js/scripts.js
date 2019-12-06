@@ -79,6 +79,16 @@ jQuery(document).ready(function($){
       });
       // End Smooth scrolling
 
+      $('.post_holder').infiniteScroll({
+        // options
+        path: '.post_holder .next',
+        append: '.single_blog',
+        history: false,
+        button:'#load_posts',
+        scrollThreshold:false
+
+      });
+
 
 
 
