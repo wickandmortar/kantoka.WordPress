@@ -20,20 +20,24 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		background: rgba(255,255,255,.3);
-		width: 80%;
+		/*background: rgba(255,255,255,.3);*/
+		width: auto;
 		padding:100px 50px;
+		padding-top: 200px;
+		h1,p{
+			color:#fff;
+		}
 
 	}
 
 	p{
-		margin-bottom: 250px;
+		margin-bottom: 150px;
 	}
 	.down-arrow{
-		/*position: absolute;*/
-		/*bottom: 75px;
+		position: absolute;
+		bottom: 75px;
 		left: 50%;
-		transform:translateX(-50%);*/
+		transform:translateX(-50%);
 		cursor:pointer;
 		
 		& img{

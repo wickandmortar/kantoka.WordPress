@@ -23,15 +23,13 @@ get_header(); ?>
 			<div class="col-12 text-center">
 				<h1>WELCOME TO KANTOKA</h1>
 				<p>SOMETHING FOR EVERYONE</p>
-
-				<a href="#down-to-arrow" id="down-arrow" class="down-arrow">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/down-arow.png" alt="">
-				</a>
 			</div>
 		</div>
-
-
 	</div>
+
+	<a href="#down-to-arrow" id="down-arrow" class="down-arrow">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/white-down_arrow.png" alt="">
+	</a>
 
 
 
