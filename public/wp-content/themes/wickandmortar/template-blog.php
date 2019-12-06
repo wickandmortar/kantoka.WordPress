@@ -21,7 +21,6 @@ get_header(); ?>
         <br>
         <div class="row post_holder">
                 
-            
 
                 <?php
                     global $post;
@@ -69,8 +68,8 @@ get_header(); ?>
         </div>
 
         <div class="row">
-            <div class="col-12">
-                <a id="load_posts" href="#" class="btn">See More Articles</a>
+            <div class="col-12 text-center">
+                <a id="load_posts" href="#" class="btn load_more_post">See More Articles</a>
             </div>
         </div>
 

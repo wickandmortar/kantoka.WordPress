@@ -17,7 +17,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="text-center copy_right">
-                        © 2019 Kantoka Technologies, Inc. All Rights Reserved. Website by <a href="http://wickandmortar.com">Wick & Mortar</a>
+                        ©2019 Kantoka Technologies, Inc. All Rights Reserved.
+                        <a href="/privacy-policy">Privacy Policy </a> | <a href="/terms-of-use">Terms of Use</a>
+    <a href="http://wickandmortar.com">Website by Wick & Mortar</a> 
                     </p>
                 </div>
             </div>
