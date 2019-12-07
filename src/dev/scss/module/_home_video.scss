@@ -1,6 +1,7 @@
 .home_video{
 	padding:120px 0;
 	background-image: url('../images/pattern.png');
+	background-size:cover;
 
 	@include medium{
 		padding:140px 0;

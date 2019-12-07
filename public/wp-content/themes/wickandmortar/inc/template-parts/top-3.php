@@ -61,7 +61,7 @@
                             <a href="<?php the_permalink(); ?>">
                                 <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
                                     <div class="blog-list-content">
-                                         <h4><?php the_title(); ?></h4>
+                                         <h4><?php echo wp_trim_words(get_the_title(), 8,'...'); ?></h4>
                                     </div>
                                 </article>
                             </a>

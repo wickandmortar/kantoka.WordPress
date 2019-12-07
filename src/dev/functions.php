@@ -56,3 +56,6 @@ function after_age_gate($after){
   return $after;
 
 }
+
+
+add_filter( 'gform_confirmation_anchor', '__return_false' );

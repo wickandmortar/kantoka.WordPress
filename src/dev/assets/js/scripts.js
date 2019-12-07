@@ -79,15 +79,21 @@ jQuery(document).ready(function($){
       });
       // End Smooth scrolling
 
+      //Load more posts
       $('.post_holder').infiniteScroll({
-        // options
         path: '.post_holder .next',
         append: '.single_blog',
-        history: false,
         button:'#load_posts',
-        scrollThreshold:false
+        scrollThreshold:false,
+        // history: false,
 
       });
+
+
+      // Remove current menu item from contact menu item
+      $('.not-current').removeClass('current-menu-item');
+
+
 
 
 

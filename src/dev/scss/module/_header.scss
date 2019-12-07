@@ -118,6 +118,7 @@
             opacity: 0;
             z-index: -1;
             transform: translateX(15px);
+            padding-left: 25px;
 
             @include medium{
             	padding:0 15px;

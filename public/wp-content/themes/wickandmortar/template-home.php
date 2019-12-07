@@ -218,7 +218,7 @@ get_header(); ?>
 			<div class="col-md-6 no-padding text-col order-1 order-md-2">
 				<div class="inner">
 					<h2 class="bb pink">EXPLORE POPULAR <br /> STRAINS AND <br /> PRODUCTS</h2>
-					<p>A curated collection of high-end flower,<br /> oils,edibles,extracts and topicals</p>
+					<p>A curated collection of high-end flower, <br /> oils, edibles, extracts and topicals</p>
 				</div>
 			</div>
 

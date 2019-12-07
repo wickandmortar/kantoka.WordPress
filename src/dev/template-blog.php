@@ -77,59 +77,6 @@ get_header(); ?>
     </div>
 </section>
 
-
-<!-- Brands List -->
-
-<!-- <section class="blog-list blog-page-brands">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
-                <h2>Brands you might like</h2>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-
-            <div class="col-md-4">                    
-                <a href="/brands/brnt.html">
-                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/brands/brnt/BRNT-Designs-Full Logo-Black.png')">
-                        <div class="blog-list-content">
-                            <h4>Brnt</h4>
-                        </div>
-                    </article>
-                </a>
-            </div>
-            <div class="col-md-4">                    
-                <a href="/brands/vessel.html">
-                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/brands/vessel/VESSEL Logo.png')">
-                        <div class="blog-list-content">
-                            <h4>vessel</h4>
-                        </div>
-                    </article>
-                </a>
-            </div>
-            <div class="col-md-4">                    
-                <a href="/brands/xvape.html">                   
-                    <article class="blog-list-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/brands/xvape/xvape-logo.jpg')">
-                        <div class="blog-list-content">
-                            <h4>Xvape</h4>
-                        </div>
-                    </article>
-                </a>    
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <a href="#" class="btn">See More Articles</a>
-            </div>
-        </div>
-    </div>
-</section>
- -->
     <?php
         $text = get_field('kantoka_cta_text');
         $ID = get_field('kantoka_cta_ID')
