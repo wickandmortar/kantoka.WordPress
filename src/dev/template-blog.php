@@ -10,7 +10,7 @@ get_header(); ?>
 
 <!-- Recent Blog Post -->
 <section class="blog-list recent-blog-post">
-    <div class="container">
+    <div class="container post_holder">
         <div class="row">
             <div class="col-md-12">
                 <hr>
@@ -19,7 +19,7 @@ get_header(); ?>
         </div>
         <br>
         <br>
-        <div class="row post_holder">
+        
                 
 
                 <?php
@@ -34,21 +34,40 @@ get_header(); ?>
                     );
 
                     $head_query  = new WP_Query($args);
-                    $j = 1;
+                    $max_num_pages = $head_query->max_num_pages;
+
+                    echo "<div class='listitempage row' data-url='/' data-pagination='[ <a href=&quot;/page/2&quot;>Next</a> ] ";
+
+                    for($i = 1; $i<= $max_num_pages; $i++){
+                        if($i != 1){
+                            echo "<a href=&quot;/page/$i&quot;>$i</a>";
+                        }else{
+                            echo $i;
+                        }
+                        
+                    }
+
+                    echo "'>";
+
+
+
+
+
                     if($head_query -> have_posts()): while($head_query -> have_posts()): $head_query ->the_post();
      
                         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium_large');
                         $image = $image[0]; 
                     ?>
-                            <div class="col-md-4 single_blog">
-                                <a href="<?php the_permalink(); ?>">                  
-                                    <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
-                                        <div class="blog-list-content">
-                                            <h4><?php the_title(); ?></h4>
-                                        </div>
-                                    </article>
-                                </a>  
-                            </div>
+
+                    <div class="col-md-4 single_blog listitem" data-page-url="/">
+                        <a href="<?php the_permalink(); ?>">                  
+                            <article class="blog-list-item" style="background-image: url('<?php echo $image; ?>')">
+                                <div class="blog-list-content">
+                                    <h4><?php the_title(); ?></h4>
+                                </div>
+                            </article>
+                        </a>  
+                    </div>
 
 
                 <?php
@@ -59,22 +78,21 @@ get_header(); ?>
 
 
                 endif; wp_reset_postdata();
+                echo "</div>";
                 ?>
-
-                
-
-
-
-        </div>
-
-        <div class="row">
-            <div class="col-12 text-center">
-                <a id="load_posts" href="#" class="btn load_more_post">See More Articles</a>
-            </div>
-        </div>
 
 
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <a id="load_posts" href="#" data-page="1" data-url="<?php echo admin_url('admin-ajax.php')?>" class="btn load_more_post">See More Articles</a>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 
     <?php
