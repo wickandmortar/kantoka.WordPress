@@ -118,7 +118,8 @@ jQuery(document).ready(function($){
 		}); //Ajax call finished
 
 		$(document).on('click','a.finished',function(){
-			$(this).text('I said, no more posts!!!')
+			//$(this).text('I said, no more posts!!!')
+			
 		})
 
 

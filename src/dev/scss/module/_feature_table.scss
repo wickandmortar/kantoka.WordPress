@@ -58,7 +58,7 @@
                 }
 
                 
-                img{
+                svg{
                     width: 110px;
                     margin-bottom: 30px;
                     @include respond-to(lg){
@@ -67,6 +67,15 @@
 
                     &.white{
                     	display: none;
+                    }
+
+                    @include medium{
+                    	&.black{
+	                    	display: none;
+	                    }
+                    	&.white{
+	                    	display: inline-block;
+	                    }
                     }
                 }
                 p,a{
@@ -145,10 +154,10 @@
                     	color:#fff;
                     }
 
-                    img.black{
+                    svg.black{
                     	display: none;
                     }
-                    img.white{
+                    svg.white{
                     	display: inline-block;
                     }
                 }

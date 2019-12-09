@@ -178,4 +178,10 @@
 .load_more_post{
 	margin-top: 50px;
 	margin-bottom: 50px;
+
+	&.finished{
+		cursor: default;
+		background: #ddd;
+		opacity: .5;
+	}
 }
