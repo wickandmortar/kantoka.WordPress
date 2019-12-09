@@ -68,13 +68,14 @@ function kantoka_load_more_callback(){
 	$paged = $_POST['page'];
 	$page_no = $paged + 1;
 	$previous = $paged - 1;
-	$second_next = $paged +2;
+	$second_next = $paged + 2;
 
 	$args = array(
 	    'post_type' => 'post',
 	    'posts_per_page' =>3,
 	    'category__not_in' => 3,
 	    'paged' => $paged +1,
+	    'post_status' => 'publish',
 	);
 
 	$head_query  = new WP_Query($args);

@@ -87,7 +87,9 @@ jQuery(document).ready(function($){
 		$(document).on('click', '.load_more_post', function(e){
 			e.preventDefault();
 			var page = $(this).data('page');
+			var maxpage = $(this).data('maxpage');
 			var ajaxUrl = $(this).data('url');
+			// var ajaxUrl = 'http://kantoka.wpengine.com/wp-admin/admin-ajax.php';
 			var that = $(this);
 
 			$.ajax({
@@ -100,6 +102,10 @@ jQuery(document).ready(function($){
 				success:function(res){
 					$('.post_holder').append(res);
 					that.data('page', page+1) ;
+					if((page +1) == maxpage){
+						that.addClass('finished');
+						that.text('No more posts!')
+					}
 				},
 				error: function(err){
 					console.log(err);
@@ -109,7 +115,11 @@ jQuery(document).ready(function($){
 			});
 
 				
-		});
+		}); //Ajax call finished
+
+		$(document).on('click','a.finished',function(){
+			$(this).text('I said, no more posts!!!')
+		})
 
 
 

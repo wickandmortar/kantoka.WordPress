@@ -29,12 +29,13 @@ get_header(); ?>
                         'post_type' => 'post',
                         'posts_per_page' =>3,
                         'category__not_in' => 3,
-                        'paged' => $ourCurrentPage,
-
+                        'post_status' => 'publish',
+                        'paged' => 1,
                     );
 
                     $head_query  = new WP_Query($args);
                     $max_num_pages = $head_query->max_num_pages;
+
 
                     echo "<div class='listitempage row' data-url='/' data-pagination='[ <a href=&quot;/page/2&quot;>Next</a> ] ";
 
@@ -87,7 +88,7 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <a id="load_posts" href="#" data-page="1" data-url="<?php echo admin_url('admin-ajax.php')?>" class="btn load_more_post">See More Articles</a>
+                <a id="load_posts" href="#" data-page="1" data-maxpage="<?php echo $max_num_pages; ?>" data-url="<?php echo admin_url('admin-ajax.php'); ?>" class="btn load_more_post">See More Articles</a>
             </div>
         </div>
     </div>
