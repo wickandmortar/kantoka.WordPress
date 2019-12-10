@@ -3,7 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <?php dynamic_sidebar('footer_col_1'); ?>
+                    <?php //dynamic_sidebar('footer_col_1'); ?>
+                    <a href="/"><img class="attachment-full size-full" src="<?php echo get_template_directory_uri();?>/assets/images/kantoka-white-logo.svg" alt="" width="187" height="63" /></a>
                 </div>
 
                 <div class="col-md-4">
@@ -18,8 +19,7 @@
                 <div class="col-md-12">
                     <p class="text-center copy_right">
                         ©2019 Kantoka Technologies, Inc. All Rights Reserved.
-                        <a href="/privacy-policy"> &nbsp;Privacy Policy </a> | <a href="/terms-of-use">Terms of Use </a>
-    <a href="http://wickandmortar.com"> &nbsp; Website by Wick & Mortar</a> 
+                        <a href="/privacy-policy"> &nbsp;Privacy Policy </a> | <a href="/terms-of-use">Terms of Use </a> <a href="http://wickandmortar.com"> &nbsp; Website by Wick & Mortar</a> 
                     </p>
                 </div>
             </div>
