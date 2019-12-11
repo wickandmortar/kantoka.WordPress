@@ -2,7 +2,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 logo_container">
                     <?php //dynamic_sidebar('footer_col_1'); ?>
                     <a href="/"><img class="attachment-full size-full" src="<?php echo get_template_directory_uri();?>/assets/images/kantoka-white-logo.svg" alt="" width="187" height="63" /></a>
                 </div>

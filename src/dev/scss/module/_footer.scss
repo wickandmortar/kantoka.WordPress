@@ -71,6 +71,13 @@
 		max-width: unset;
 	}
 
+	.logo_container{
+		@include minLarge{
+			padding-top: 35px;
+		}
+		
+	}
+
 
 }
 .social-icon{
