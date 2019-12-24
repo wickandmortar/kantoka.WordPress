@@ -32,17 +32,19 @@
 
             }
 
-            .bg_container{
+            .bg_color_container{
             	display: none;
             	position: absolute;
             	height: 100%;
             	width: 100%;
             	background:rgba(0,0,0,.5);
 
+
             	@include medium{
             		display: block;
             	}
             }
+
             
             .feature-table-content{
                 position: absolute;
@@ -58,7 +60,7 @@
                 }
 
                 
-                svg{
+                img,svg{
                     width: 110px;
                     margin-bottom: 30px;
                     @include respond-to(lg){
@@ -106,10 +108,10 @@
                 	/*background: rgba(0,0,0,.5);*/
                 	padding:25px 15px;
 
-                	img.black{
+                	img.black, svg.black{
                 		display: none;
                 	}
-                	img.white{
+                	img.white, svg.white{
                 		display: block;
                 		margin:0 auto;
                 		margin-bottom: 15px;
@@ -154,10 +156,10 @@
                     	color:#fff;
                     }
 
-                    svg.black{
+                    img.black, svg.black{
                     	display: none;
                     }
-                    svg.white{
+                    img.white, svg.white{
                     	display: inline-block;
                     }
                 }

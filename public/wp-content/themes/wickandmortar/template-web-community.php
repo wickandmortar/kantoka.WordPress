@@ -31,14 +31,29 @@ get_header(); ?>
 				<a href="/#contact">Connect with us ></a>
 			</div>
 
-			<div class="col-md-6 img_col order-1 order-md-2" style="background-image:url('<?php echo get_template_directory_uri();?>/assets/images/forefront.jpg');">
+			<div class="col-md-6 img_col order-1 order-md-2 img_col_1">
 			</div>
+			<style>
+				.img_col_1{
+					background-image:url('<?php echo get_template_directory_uri();?>/assets/images/forefront.jpg');
+				}
+
+				@media only screen and (-webkit-min-device-pixel-ratio: 2),
+				only screen and (   min--moz-device-pixel-ratio: 2),
+				only screen and (     -o-min-device-pixel-ratio: 2/1),
+				only screen and (        min-device-pixel-ratio: 2),
+				only screen and (                min-resolution: 192dpi),
+				only screen and (                min-resolution: 2dppx) { 
+
+
+				}
+			</style>
 
 		</div>
 
 		<div class="row">
 
-			<div class="col-md-6 img_col" style="background-image:url('<?php echo get_template_directory_uri();?>/assets/images/transform.jpg');">
+			<div class="col-md-6 img_col img_col_2" >
 			</div>
 
 			<div class="col-md-6 text_col my-auto">
@@ -48,6 +63,25 @@ get_header(); ?>
 				<p>Cannabis is all about connection, and Kantoka is all about connecting brands and audiences through information, education, and elevation.</p>
 				<a href="/#contact">Submit your idea here ></a>
 			</div>
+
+			<style>
+				.img_col_2{
+					background-image:url('<?php echo get_template_directory_uri();?>/assets/images/transform.jpg');
+					
+				}
+
+				@media only screen and (-webkit-min-device-pixel-ratio: 2),
+				only screen and (   min--moz-device-pixel-ratio: 2),
+				only screen and (     -o-min-device-pixel-ratio: 2/1),
+				only screen and (        min-device-pixel-ratio: 2),
+				only screen and (                min-resolution: 192dpi),
+				only screen and (                min-resolution: 2dppx) { 
+					.img_col_2{
+						background-image:url('<?php echo get_template_directory_uri();?>/assets/images/kantoka-photo-9.jpg');
+					}
+
+				}
+			</style>
 			
 		</div>
 
@@ -63,8 +97,24 @@ get_header(); ?>
 				<a href="/#contact">Submit your idea here ></a>
 			</div>
 
-			<div class="col-md-6 img_col order-1 order-md-2" style="background-image:url('<?php echo get_template_directory_uri();?>/assets/images/forward.jpg');">
+			<div class="col-md-6 img_col order-1 order-md-2 img_col_3">
 			</div>
+
+			<style>
+				.img_col_3{
+					background-image:url('<?php echo get_template_directory_uri();?>/assets/images/forward.jpg');
+				}
+
+				@media only screen and (-webkit-min-device-pixel-ratio: 2),
+				only screen and (   min--moz-device-pixel-ratio: 2),
+				only screen and (     -o-min-device-pixel-ratio: 2/1),
+				only screen and (        min-device-pixel-ratio: 2),
+				only screen and (                min-resolution: 192dpi),
+				only screen and (                min-resolution: 2dppx) { 
+
+
+				}
+			</style>
 
 		</div>
 
